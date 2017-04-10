@@ -10,7 +10,7 @@ root {
 }
 
 prototype(Neos.NodeTypes:Page.Document) >
-prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page ) {
+prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 
     head {
         stylesheets.site = Neos.Fusion:Template {
