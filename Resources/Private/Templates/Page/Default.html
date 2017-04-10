@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace fusion=Neos\Fusion\ViewHelpers}
-<html>
+<html xmlns:f="http://www.w3.org/1999/xlink">
 <head>
 	<f:section name="stylesheets">
 		<!-- Put your stylesheet inclusions here, they will be included in your website by Fusion -->
+
+		<link rel=stylesheet href="{f:uri.resource(path: 'Styles/main.css', package: 'Js.SbfW')}">
 	</f:section>
 	<f:section name="headScripts">
 		<!-- Put your scripts inclusions for the head here, they will be included in your website by Fusion -->
