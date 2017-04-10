@@ -14,22 +14,18 @@
 </head>
 <body>
 <f:section name="body">
-	<nav class="menu">
-		{parts.menu -> f:format.raw()}
-	</nav>
-	<div class="content">
 
-		<div id="wrapper" style="text-align: center;">
-			<a class="link" href="mailto:mail@joekola.de">
-				<h1 class="titel">Schäfer - Büro für Webentwicklung</h1>
-				<img src="fileadmin/templates/vika/logo+_vert.png" alt="Logo: Schäfer" width="350" />
-			</a>
 
-			{content.main -> f:format.raw()}
+	<div id="wrapper" style="text-align: center;">
+		<a class="link" href="mailto:mail@joekola.de">
+			<h1 class="titel">Schäfer - Büro für Webentwicklung</h1>
+			<img src="fileadmin/templates/vika/logo+_vert.png" alt="Logo: Schäfer" width="350" />
+		</a>
 
-		</div>
+		{content.main -> f:format.raw()}
 
 	</div>
+
 </f:section>
 <f:section name="bodyScripts">
 	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
