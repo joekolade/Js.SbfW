@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "js/sbfw",
+    "autoload": {
+        "psr-4": {
+            "Js\\Sbfw\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Js.Sbfw"
+        }
+    }
+}
