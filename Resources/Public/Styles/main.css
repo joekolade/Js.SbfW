@@ -36,6 +36,9 @@
         display: block;
         margin: 0 auto;
       }
+      a {
+          display: inline-block;
+      }
       a img {
         max-width: 400px;
         width: 100%;
