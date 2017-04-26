@@ -12,6 +12,8 @@ root {
 prototype(Neos.NodeTypes:Page.Document) >
 prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 
+    headerComment.@process.1 = ${'JbfW ' + value}
+
     head {
         stylesheets.site = Neos.Fusion:Template {
             templatePath = 'resource://Js.Sbfw/Private/Templates/Page/Default.html'
