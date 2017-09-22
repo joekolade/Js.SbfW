@@ -6,3 +6,12 @@
 #  childNodes:
 #    'sidebar':
 #      type: 'Neos.Neos:ContentCollection'
+
+'Neos.NodeTypes:Text':
+  properties:
+    'additionalClass':
+      type: text
+      ui:
+        label: 'CSS-Class'
+        inspector:
+          group: 'general'
