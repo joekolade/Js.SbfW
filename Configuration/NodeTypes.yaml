@@ -38,7 +38,7 @@
       ui:
         label: 'Referenz-Titel'
         inspector:
-          group: 'reference'
+          group: 'image'
     url:
       type: string
       ui:
