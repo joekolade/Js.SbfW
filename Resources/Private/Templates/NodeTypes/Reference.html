@@ -5,6 +5,9 @@
 	</div>
 	<div class="contentWrap">
 		<h2>{neos:contentElement.editable(property: 'title')}</h2>
+		<p>
+			{f:link.external(uri: url)}
+		</p>
 		{neos:contentElement.editable(property: 'text')}
 	</div>
 </div>
