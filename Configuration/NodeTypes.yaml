@@ -20,6 +20,13 @@
   ui:
     icon: 'fort-awesome'
     label: 'Referenz'
+    inspector:
+      groups:
+        reference:
+          label: 'Referenz'
+          icon: 'fort-awesome'
+          position: 5
+          tab: 'general'
   superTypes:
     - 'Neos.NodeTypes:TextWithImage'
   properties:
@@ -28,4 +35,4 @@
       ui:
         label: 'Referenz-Titel'
         inspector:
-          group: 'general'
+          group: 'reference'
