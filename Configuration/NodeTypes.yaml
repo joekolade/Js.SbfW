@@ -16,6 +16,7 @@
         inspector:
           group: 'general'
 
+
 'Js.Sbfw:Reference':
   superTypes:
     'Neos.NodeTypes:TextWithImage': TRUE
