@@ -26,7 +26,7 @@
           label: 'Referenz'
           icon: 'fort-awesome'
           position: 5
-          tab: 'general'
+          #tab: 'general'
   superTypes:
     - 'Neos.NodeTypes:TextWithImage'
   properties:
