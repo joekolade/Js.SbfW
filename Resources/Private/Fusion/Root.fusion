@@ -49,6 +49,6 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 }
 
 prototype(Js.Sbfw:Reference) < prototype(Neos.NodeTypes:TextWithImage) {
-    image.imageClassName = 'img-responsive'
-    image.maximumWidth = 365
+    imageClassName = 'img-responsive'
+    maximumWidth = 365
 }

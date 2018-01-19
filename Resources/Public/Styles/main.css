@@ -46,7 +46,7 @@
 
 
 .js-sbfw-reference figure {
-  margin-bottom: 1em;
+  margin-bottom: 1.4em;
 }
 
 .js-sbfw-reference figure img {
@@ -54,6 +54,6 @@
   border-radius: 2px;
   background: #444e4c;
   max-width: 100%;
-  box-shadow: 0 1em 1em 0.5em rgba(0, 0, 0, 0.1);
+  box-shadow: 0 .7em .7em 0.35em rgba(0, 0, 0, 0.1);
 }
 
