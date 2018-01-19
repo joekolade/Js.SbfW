@@ -44,3 +44,16 @@
         width: 100%;
       }
 
+
+.js-sbfw-reference figure {
+  margin-bottom: 1em;
+}
+
+.js-sbfw-reference figure img {
+  padding: 3px;
+  border-radius: 2px;
+  background: #444e4c;
+  max-width: 100%;
+  box-shadow: 0 1em 1em 0.5em rgba(0, 0, 0, 0.1);
+}
+
