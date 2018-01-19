@@ -21,7 +21,7 @@
     icon: 'fort-awesome'
     label: 'Referenz'
   superTypes:
-    - 'Neos.NodeTypes:Text'
+    - 'Neos.NodeTypes:TextWithImage'
   properties:
     'title':
       type: text

@@ -47,3 +47,7 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
         }
     }
 }
+
+prototype(Js.Sbfw:Reference) < prototype(Neos.NodeTypes:TextWithImages) {
+
+}
