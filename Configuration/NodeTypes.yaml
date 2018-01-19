@@ -28,7 +28,7 @@
           label: 'Referenz'
           icon: 'fort-awesome'
           position: 10
-          #tab: 'general'
+          tab: 'general'
         image:
           position: 15
   properties:
