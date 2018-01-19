@@ -43,9 +43,9 @@
           reloadPageIfChanged: true
     'referenceurl':
       type: string
+      defaultValue: 'http://www.schaefer-webentwicklung.de'
       ui:
         label: 'Referenz-URL'
-        defaultValue: 'http://www.schaefer-webentwicklung.de'
         inspector:
           group: 'reference'
           reloadPageIfChanged: true
