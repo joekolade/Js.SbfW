@@ -25,7 +25,7 @@
     inspector:
       groups:
         reference:
-          label: 'Referenz'
+          label: 'Referenz Eigenschaften'
           icon: 'fort-awesome'
           position: 10
           tab: 'general'
