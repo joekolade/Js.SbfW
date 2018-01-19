@@ -17,6 +17,8 @@
           group: 'general'
 
 'Js.Sbfw:Reference':
+  superTypes:
+    - 'Neos.NodeTypes:TextWithImage'
   ui:
     icon: 'fort-awesome'
     label: 'Referenz'
@@ -27,8 +29,6 @@
           icon: 'fort-awesome'
           position: 5
           #tab: 'general'
-  superTypes:
-    - 'Neos.NodeTypes:TextWithImage'
   properties:
     'title':
       type: text
