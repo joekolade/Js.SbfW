@@ -33,7 +33,7 @@
           position: 15
   properties:
     'title':
-      type: text
+      type: string
       ui:
         label: 'Referenz-Titel'
         inspector:
