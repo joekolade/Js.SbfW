@@ -32,13 +32,13 @@
         image:
           position: 15
   properties:
-    'title':
+    title:
       type: string
       ui:
         label: 'Referenz-Titel'
         inspector:
           group: 'reference'
-    'url':
+    url:
       type: string
       ui:
         label: 'Referenz-URL'
