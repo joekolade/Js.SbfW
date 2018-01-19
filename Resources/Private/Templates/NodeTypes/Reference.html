@@ -5,11 +5,14 @@
 		<f:render partial="Image" arguments="{_all}" />
 	</div>
 	<div class="contentWrap">
-		<h2>{referencetitle}</h2>
+		<h2>
+			<a href="{referenceurl -> f:format.raw()}" target="_blank">{referencetitle}</a>
+		</h2>
 		<p>
-			{referenceurl -> f:format.raw()}
-			{f:link.external(uri: url)}
+			<a href="{referenceurl -> f:format.raw()}" target="_blank">{referenceurl -> f:format.raw()}</a>
 		</p>
-		{neos:contentElement.editable(property: 'text')}
+		<div class="context">
+			{neos:contentElement.editable(property: 'text')}
+		</div>
 	</div>
 </div>
