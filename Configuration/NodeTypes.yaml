@@ -28,7 +28,6 @@
           label: 'Referenz'
           icon: 'fort-awesome'
           position: 10
-          #tab: 'general'
         image:
           position: 15
   properties:
@@ -36,5 +35,4 @@
       type: string
       ui:
         label: 'Referenz-Titel'
-        inspector:
-          group: 'reference'
+        inlineEditable: true
