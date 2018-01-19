@@ -38,14 +38,14 @@
       defaultValue: 'Titel der Referenz'
       ui:
         label: 'Referenz-Titel'
+        reloadIfChanged: true
         inspector:
           group: 'reference'
-          reloadPageIfChanged: true
     'referenceurl':
       type: string
       defaultValue: 'http://www.schaefer-webentwicklung.de'
       ui:
         label: 'Referenz-URL'
+        reloadIfChanged: true
         inspector:
           group: 'reference'
-          reloadPageIfChanged: true
