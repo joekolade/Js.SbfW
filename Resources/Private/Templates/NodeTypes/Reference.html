@@ -6,7 +6,7 @@
 	<div class="contentWrap">
 		<h2>{referencetitle}</h2>
 		<p>
-			{url}
+			{referenceurl -> f:format.raw()}
 			{f:link.external(uri: url)}
 		</p>
 		{neos:contentElement.editable(property: 'text')}

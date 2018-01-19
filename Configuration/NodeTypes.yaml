@@ -33,7 +33,7 @@
         image:
           position: 15
   properties:
-    referencetitle:
+    'referencetitle':
       type: string
       defaultValue: 'Titel der Referenz'
       ui:
@@ -41,7 +41,7 @@
         inspector:
           group: 'image'
           reloadPageIfChanged: true
-    url:
+    'referenceurl':
       type: string
       ui:
         label: 'Referenz-URL'
