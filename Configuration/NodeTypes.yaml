@@ -23,9 +23,9 @@
   superTypes:
     - 'Neos.NodeTypes:Text'
   properties:
-    'additionalClass':
+    'title':
       type: text
       ui:
-        label: 'Referenz'
+        label: 'Referenz-Titel'
         inspector:
           group: 'general'
