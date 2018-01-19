@@ -33,7 +33,7 @@
         image:
           position: 15
   properties:
-    title:
+    referencetitle:
       type: string
       defaultValue: 'Titel der Referenz'
       ui:
