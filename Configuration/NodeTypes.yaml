@@ -35,13 +35,17 @@
   properties:
     title:
       type: string
+      defaultValue: 'Titel der Referenz'
       ui:
         label: 'Referenz-Titel'
         inspector:
           group: 'image'
+          reloadPageIfChanged: true
     url:
       type: string
       ui:
         label: 'Referenz-URL'
+        defaultValue: 'http://www.schaefer-webentwicklung.de'
         inspector:
           group: 'reference'
+          reloadPageIfChanged: true
