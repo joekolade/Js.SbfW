@@ -15,3 +15,14 @@
         label: 'CSS-Class'
         inspector:
           group: 'general'
+
+'Js.Sbfw:Reference':
+  superTypes:
+    - 'Neos.NodeTypes:Text'
+  properties:
+    'additionalClass':
+      type: text
+      ui:
+        label: 'Referenz'
+        inspector:
+          group: 'general'
