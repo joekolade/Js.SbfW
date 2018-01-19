@@ -39,7 +39,7 @@
       ui:
         label: 'Referenz-Titel'
         inspector:
-          group: 'image'
+          group: 'reference'
           reloadPageIfChanged: true
     'referenceurl':
       type: string
