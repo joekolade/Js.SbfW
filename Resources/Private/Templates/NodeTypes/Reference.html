@@ -3,8 +3,8 @@
 	<div class="imageWrap">
 		<f:render partial="Image" arguments="{_all}" />
 	</div>
-<div class="contentWrap">
-	<h2>{neos:contentElement.editable(property: 'title')}</h2>
-	{neos:contentElement.editable(property: 'text')}
-</div>
+	<div class="contentWrap">
+		<h2>{title -> f:format.raw()}</h2>
+		{neos:contentElement.editable(property: 'text')}
+	</div>
 </div>
