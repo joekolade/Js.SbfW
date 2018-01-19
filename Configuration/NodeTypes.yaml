@@ -21,6 +21,7 @@
   superTypes:
     'Neos.NodeTypes:TextWithImage': TRUE
   ui:
+    group: 'general'
     icon: 'fort-awesome'
     label: 'Referenz'
     inspector:
