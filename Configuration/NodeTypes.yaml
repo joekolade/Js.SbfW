@@ -17,6 +17,9 @@
           group: 'general'
 
 'Js.Sbfw:Reference':
+  ui:
+    icon: 'fort-awesome'
+    label: 'Referenz'
   superTypes:
     - 'Neos.NodeTypes:Text'
   properties:
