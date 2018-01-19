@@ -6,6 +6,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0; padding: 0;border: 0; outline: 0;
 	font-size: 100%; vertical-align: baseline; background: transparent;
+	box-sizing: border-box;
 }
 @import url("http://fonts.googleapis.com/css?family=Permanent+Marker|Gruppo|Fontdiner+Swanky|Yanone+Kaffeesatz:light,regular,bold|Philosopher|Cherry+Cream+Soda");
 
