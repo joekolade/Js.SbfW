@@ -21,7 +21,10 @@
 </f:if>
 
 <f:section name="imageRendering">
-	<media:image image="{image}" alt="{alternativeText}" title="{title}" width="{width}"
+	<media:image image="{image}"
+				 alt="{f:if(condition: alternativeText, then: alternativeText, else: referencetitle}"
+				 title="{f:if(condition: title, then: title, else: referencetitle}"
+				 width="{width}"
 				 maximumWidth="{maximumWidth}" height="{height}" maximumHeight="{maximumHeight}"
 				 allowUpScaling="{allowUpScaling}" allowCropping="{allowCropping}" />
 </f:section>
