@@ -6,7 +6,8 @@
         "neos/nodetypes": "*"
     },
     "suggest": {
-        "neos/seo": "*"
+        "neos/seo": "*",
+        "obisconcept/neos-cookieconsent": "^2.0"
     },
     "name": "js/sbfw",
     "autoload": {
