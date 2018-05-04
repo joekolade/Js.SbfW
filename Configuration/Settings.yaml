@@ -1,3 +1,17 @@
+---
+
+Flowpack:
+  Neos:
+    Matomo:
+      host: 'stats.schaefer-webentwicklung.de'
+      protocol: 'http'
+      token_auth: 'dc9fd0bb2fd65491befbb8d3b9261230'
+      idSite: 1
+      apiTimeout: 10
+      cacheLifetimeByPeriod:
+        year: 86400
+        day: 3600
+
 ObisConcept:
   CookieConsent:
     enable: true
@@ -16,15 +30,3 @@ ObisConcept:
       button:
         background: '#fff'
         text: '#2f8695'
-
-Flowpack:
-  Neos:
-    Matomo:
-      host: 'stats.schaefer-webentwicklung.de'
-      protocol: 'http'
-      token_auth: 'dc9fd0bb2fd65491befbb8d3b9261230'
-      idSite: 1
-      apiTimeout: 10
-      cacheLifetimeByPeriod:
-        year: 86400
-        day: 3600
