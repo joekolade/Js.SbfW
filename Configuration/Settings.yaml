@@ -6,10 +6,6 @@ Flowpack:
       protocol: 'http'
       token_auth: 'dc9fd0bb2fd65491befbb8d3b9261230'
       idSite: 1
-      apiTimeout: 10
-      cacheLifetimeByPeriod:
-        year: 86400
-        day: 3600
 
 ObisConcept:
   CookieConsent:
@@ -17,9 +13,6 @@ ObisConcept:
     includeJavaScript: true
     includeCss: true
     policyPageNode: '46e663ec-6a67-4868-82bd-2642f51a5f84'
-#    translations:
-#      package: 'ObisConcept.CookieConsent'
-#      source: 'Main'
     position: 'bottom'
     theme: 'block'
     palette:
