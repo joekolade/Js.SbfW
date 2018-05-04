@@ -3,11 +3,11 @@
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
-        "neos/nodetypes": "*"
+        "neos/nodetypes": "*",
+        "obisconcept/neos-cookieconsent": "^2.0"
     },
     "suggest": {
-        "neos/seo": "*",
-        "obisconcept/neos-cookieconsent": "^2.0"
+        "neos/seo": "*"
     },
     "name": "js/sbfw",
     "autoload": {
