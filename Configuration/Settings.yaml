@@ -2,9 +2,9 @@
 Flowpack:
   Neos:
     Matomo:
-      host: 'stats.schaefer-webentwicklung.de'
-      protocol: 'http'
-      token_auth: 'dc9fd0bb2fd65491befbb8d3b9261230'
+      host: "stats.schaefer-webentwicklung.de"
+      protocol: "http"
+      token_auth: "dc9fd0bb2fd65491befbb8d3b9261230"
       idSite: 1
 
 ObisConcept:
