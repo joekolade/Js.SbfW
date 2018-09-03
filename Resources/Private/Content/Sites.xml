@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
- <site name="Schäfer Webentwicklung" state="1" siteResourcesPackageKey="Js.Sbfw" siteNodeName="sbfw">
+ <site name="Schäfer Webentwicklung" state="1" siteResourcesPackageKey="Joekolade.Bureau" siteNodeName="sbfw">
   <nodes formatVersion="2.0">
    <node nodeName="sbfw">
     <variant workspace="live" nodeType="Neos.NodeTypes:Page" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">

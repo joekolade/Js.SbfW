@@ -9,7 +9,7 @@
     "suggest": {
         "neos/seo": "*"
     },
-    "name": "js/sbfw",
+    "name": "joekolade/bureau",
     "autoload": {
         "psr-4": {
             "Js\\Sbfw\\": "Classes/"
@@ -17,7 +17,7 @@
     },
     "extra": {
         "neos": {
-            "package-key": "Js.Sbfw"
+            "package-key": "Joekolade.Bureau"
         },
         "applied-flow-migrations": [
             "TYPO3.FLOW3-201201261636",

@@ -16,18 +16,18 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 
     head {
         stylesheets.site = Neos.Fusion:Template {
-            templatePath = 'resource://Js.Sbfw/Private/Templates/Page/Default.html'
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
             sectionName = 'stylesheets'
         }
 
         javascripts.site = Neos.Fusion:Template {
-            templatePath = 'resource://Js.Sbfw/Private/Templates/Page/Default.html'
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
             sectionName = 'headScripts'
         }
     }
 
     body {
-        templatePath = 'resource://Js.Sbfw/Private/Templates/Page/Default.html'
+        templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
         sectionName = 'body'
         parts {
             menu = Neos.Neos:Menu
@@ -42,13 +42,13 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
         }
 
         javascripts.site = Neos.Fusion:Template {
-            templatePath = 'resource://Js.Sbfw/Private/Templates/Page/Default.html'
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
             sectionName = 'bodyScripts'
         }
     }
 }
 
-prototype(Js.Sbfw:Reference) < prototype(Neos.NodeTypes:TextWithImage) {
+prototype(Joekolade.Bureau:Reference) < prototype(Neos.NodeTypes:TextWithImage) {
     imageClassName = 'img-responsive'
     maximumWidth = 365
 }
