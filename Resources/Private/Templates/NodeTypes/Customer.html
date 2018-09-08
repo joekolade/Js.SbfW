@@ -1,0 +1,46 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<h1>
+{title}
+</h1>
+<dl>
+    <dt>Domain:</dt>
+    <dd><a href="{domain}" target="_blank">{domain}</a></dd>
+
+    <dt>cms</dt>
+    <dd>{cms}</dd>
+
+    <dt>version</dt>
+    <dd>{version}</dd>
+
+    <dt>hoster</dt>
+    <dd>{hoster}</dd>
+
+</dl>
+<f:if condition="{gdpr}">
+    <f:then>
+        DSGVO - ready
+    </f:then>
+    <f:else>
+        DSGVO - <b>NOT</b> ready!
+    </f:else>
+</f:if>
+
+<f:render partial="Contact" arguments="{contact: contact}"></f:render>
+
+<neos:contentElement.wrap node="{node}">
+<h2>Recommendation</h2>
+    <p>
+        <neos:contentElement.editable property="recommendation" tag="div" />
+    </p>
+
+<h2>Recommendation (LT)</h2>
+    <p>
+    {neos:contentElement.editable(property: 'recommendationLongterm')}
+    </p>
+
+
+<h2>Comment</h2>
+<p>
+    {neos:contentElement.editable(property: 'comment')}
+</p>
+</neos:contentElement.wrap>

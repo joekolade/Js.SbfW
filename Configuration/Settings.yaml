@@ -1,4 +1,15 @@
-
+Neos:
+  Neos:
+    nodeTypes:
+      groups:
+        bureau:
+          position: before general
+          collapsed: false
+          label: 'Bureau'
+    userInterface:
+      translation:
+        autoInclude:
+          'Joekolade.Bureau': ['NodeTypes/*']
 Flowpack:
   Neos:
     Matomo:

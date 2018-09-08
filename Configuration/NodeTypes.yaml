@@ -1,8 +1,3 @@
-# If you need more than just the "main" content area you can uncomment the snippet below. It will add a "sidebar" area
-# to your pages. You can add as many areas as you like, still only those that are rendered in your Fusion-code and
-# Template are visible on your page.
----
-
 'Neos.NodeTypes:Text':
   properties:
     'additionalClass':
@@ -45,3 +40,274 @@
         reloadIfChanged: true
         inspector:
           group: 'reference'
+
+# --------------------
+# Bureau nodes
+# --------------------
+InlineEditorOptions: &InlineEditorOptions
+  editorOptions:
+    placeholder: i18n
+    autoparagraph: true
+    linking:
+      anchor: true
+      title: true
+      relNofollow: true
+      targetBlank: true
+    formatting:
+      strong: true
+      em: true
+      u: false
+      sub: false
+      sup: false
+      del: false
+      p: true
+      h1: true
+      h2: true
+      h3: true
+      h4: true
+      h5: false
+      h6: false
+      pre: false
+      underline: false
+      strikethrough: false
+      removeFormat: false
+      left: false
+      right: false
+      center: false
+      justify: false
+      table: false
+      ol: false
+      ul: false
+      a: true
+
+'Neos.Neos:Document':
+  constraints:
+    nodeTypes:
+      'Joekolade.Bureau:People': false
+      'Joekolade.Bureau:Person': false
+      'Joekolade.Bureau:Agencies': false
+      'Joekolade.Bureau:Agency': false
+      'Joekolade.Bureau:Customers': false
+      'Joekolade.Bureau:Customer': false
+
+'Joekolade.Bureau:Proto':
+  superTypes:
+    'Neos.Neos:Document': true
+  constraints:
+    nodeTypes:
+      'Neos.Neos:Shortcut': false
+      'Neos.Neos:Page': false
+      'Neos.Neos:Document': false
+
+# Bureau organization
+'Joekolade.Bureau:Folder':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  constraints:
+    nodeTypes:
+      'Joekolade.Bureau:Agencies': true
+      'Joekolade.Bureau:Customers': true
+      'Joekolade.Bureau:People': true
+  ui:
+    group: 'bureau'
+    icon: 'icon-folder-o'
+    label: i18n
+
+'Joekolade.Bureau:People':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  constraints:
+    nodeTypes:
+      'Joekolade.Bureau:Person': true
+  ui:
+    group: 'bureau'
+    icon: 'icon-users'
+    label: i18n
+
+'Joekolade.Bureau:Agencies':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  constraints:
+    nodeTypes:
+      'Joekolade.Bureau:Agency': true
+  ui:
+    group: 'bureau'
+    icon: 'icon-bank'
+    label: i18n
+
+'Joekolade.Bureau:Customers':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  constraints:
+    nodeTypes:
+      'Joekolade.Bureau:Customer': true
+  ui:
+    group: 'bureau'
+    icon: 'icon-cubes'
+    label: i18n
+
+# Entries
+
+'Joekolade.Bureau:Agency':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    label: i18n
+    group: 'bureau'
+    icon: 'icon-building'
+    inspector:
+      tabs:
+        agency:
+          label: i18n
+          icon: 'icon-building'
+          position: 1
+      groups:
+        agency:
+          label: i18n
+          icon: 'icon-building'
+          position: before general
+          tab: agency
+  properties:
+    website:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'agency'
+    contact:
+      type: references
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+          editorOptions:
+            nodeTypes: ['Joekolade.Bureau:Person']
+
+'Joekolade.Bureau:Customer':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  ui:
+    label: i18n
+    group: 'bureau'
+    icon: 'icon-cube'
+    inlineEditable: TRUE
+    inspector:
+      tabs:
+        customer:
+          label: i18n
+          position: 1
+          icon: 'icon-cube'
+      groups:
+        customer:
+          label: i18n
+          icon: 'icon-cube'
+          position: before general
+          tab: customer
+  properties:
+    agency:
+      type: references
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+          editorOptions:
+            nodeTypes: ['Joekolade.Bureau:Agency']
+    domain:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    cms:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    version:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    hoster:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    gdpr:
+      type: boolean
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    recommendation:
+      type: string
+      label: i18n
+      ui:
+        reloadIfChanged: TRUE
+        inlineEditable: TRUE
+        inline: *InlineEditorOptions
+    'recommendationLongterm':
+      type: string
+      defaultValue: 'no recommendation long term'
+      ui:
+        label: i18n
+        inlineEditable: TRUE
+        inline: *InlineEditorOptions
+    comment:
+      type: string
+      defaultValue: 'no comment'
+      ui:
+        label: i18n
+        inlineEditable: TRUE
+        inline: *InlineEditorOptions
+    contact:
+      type: references
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+          editorOptions:
+            nodeTypes: ['Joekolade.Bureau:Person']
+
+'Joekolade.Bureau:Person':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  constraints:
+    nodeTypes:
+      '*': false
+  ui:
+    label: i18n
+    group: 'bureau'
+    icon: 'icon-id-card-o'
+    inspector:
+      tabs:
+        person:
+          label: i18n
+          icon: 'icon-id-card-o'
+          position: 1
+      groups:
+        person:
+          label: i18n
+          icon: 'icon-id-card-o'
+          position: 1
+          tab: person
+  properties:
+    email:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: person

@@ -1,0 +1,11 @@
+prototype(Joekolade.Bureau:Customers.Document) < prototype(Neos.Neos:Page) {
+    body {
+        templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Customers.html'
+
+        title = ${q(node).property('title')}
+
+        #customerlist = Joekolade.Bureau:ChildCustomers
+
+        #contact = Joekolade.Bureau:ChildPersons
+    }
+}

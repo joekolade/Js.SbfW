@@ -1,0 +1,3 @@
+prototype(Joekolade.Bureau:People.Document) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/People.html'
+}
