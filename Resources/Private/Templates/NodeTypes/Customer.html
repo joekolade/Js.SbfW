@@ -25,9 +25,28 @@
     </f:else>
 </f:if>
 
-<f:render partial="Contact" arguments="{contact: contact}"></f:render>
+<f:if condition="{agency}">
+    <h2>Agentur(en)</h2>
+
+    {agency -> f:format.raw()}
+</f:if>
+
+<f:if condition="{contacts -> f:count()} > 0">
+    <h2>Kontakt</h2>
+    <f:for each="{contacts}" as="c">
+        {c -> f:format.raw()}
+    </f:for>
+</f:if>
+
+<h2>Description</h2>
+<div>
+
+    {main -> f:format.raw()}
+
+</div>
 
 <neos:contentElement.wrap node="{node}">
+
 <h2>Recommendation</h2>
     <p>
         <neos:contentElement.editable property="recommendation" tag="div" />

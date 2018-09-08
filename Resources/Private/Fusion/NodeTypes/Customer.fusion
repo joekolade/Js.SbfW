@@ -15,7 +15,30 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.Neos:Page) {
         recommendationLongterm = ${q(node).property('recommendationLongterm')}
         comment = ${q(node).property('comment')}
 
-        contact = Joekolade.Bureau:ChildPersons
+        main = Neos.Neos:PrimaryContent {
+            nodePath = 'main'
+        }
+
+//        contact = Joekolade.Bureau:Person {
+//            node = ${q(node).property('contact').get()}
+//            title = ${q(node).property('title')}
+//        }
+        contacts = Neos.Fusion:RawCollection {
+            collection = ${q(node).property('contact')}
+            itemName = 'contact'
+            itemRenderer = Neos.Fusion:Template {
+                templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/Contact.html'
+                contact = ${contact}
+                title = ${q(contact).property('title')}
+                email = ${q(contact).property('email')}
+            }
+        }
+
+        agency = Neos.Fusion:Template {
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/Agency.html'
+            agency = ${q(node).property('agency')}
+            title = ${q(agency).property('title')}
+        }
     }
 }
 
