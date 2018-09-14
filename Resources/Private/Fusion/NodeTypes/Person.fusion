@@ -3,6 +3,7 @@ prototype(Joekolade.Bureau:Person.Document) < prototype(Neos.Neos:Page) {
         templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Person.html'
 
         title = ${q(node).property('title')}
+        position = ${q(node).property('position')}
         email = ${q(node).property('email')}
     }
 }
@@ -14,6 +15,7 @@ prototype(Joekolade.Bureau:ChildPersons) < prototype(Neos.Fusion:Collection) {
         templatePath = 'resource://Joekolade.Bureau/Private/Templates/FusionObjects/CustomerPerson.html'
         person = ${person}
         title = ${q(person).property('title')}
+        position = ${q(person).property('position')}
         email = ${q(person).property('email')}
     }
 }

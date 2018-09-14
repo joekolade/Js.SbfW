@@ -14,6 +14,9 @@
             <trans-unit id="properties.website" xml:space="preserve">
                     <source>Website</source>
             </trans-unit>
+            <trans-unit id="properties.contact" xml:space="preserve">
+                    <source>Contact</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

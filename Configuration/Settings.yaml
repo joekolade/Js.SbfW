@@ -7,6 +7,7 @@ Neos:
           collapsed: false
           label: 'Bureau'
     userInterface:
+      defaultLanguage: 'de'
       translation:
         autoInclude:
           'Joekolade.Bureau': ['NodeTypes/*']

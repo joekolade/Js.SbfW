@@ -11,6 +11,9 @@
             <trans-unit id="ui.inspector.groups.person" xml:space="preserve">
                     <source>Person data</source>
             </trans-unit>
+            <trans-unit id="properties.position" xml:space="preserve">
+                    <source>Position</source>
+            </trans-unit>
             <trans-unit id="properties.email" xml:space="preserve">
                     <source>Email</source>
             </trans-unit>
