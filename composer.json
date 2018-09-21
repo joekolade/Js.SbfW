@@ -5,7 +5,7 @@
         "neos/neos": "*",
         "neos/nodetypes": "*",
         "obisconcept/neos-cookieconsent": "^2.0",
-        "sandstorm/usermanagement": "^6.0"
+        "sandstorm/usermanagement": "^5.0"
     },
     "suggest": {
         "neos/seo": "*"
