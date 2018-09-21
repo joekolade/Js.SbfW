@@ -1,5 +1,5 @@
 {
-    "description": "",
+    "description": "NEOS Site Package for Schaefer - Buero für Webenetwicklung",
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
