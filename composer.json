@@ -1,5 +1,13 @@
 {
+    "name": "joekolade/bureau",
     "description": "NEOS Site Package for Schaefer - Buero für Webentwicklung",
+    "authors": [
+      {
+        "name": "Joe Schäfer",
+        "email": "joe@schaefer-webentwicklung.de",
+        "role": "Developer"
+      }
+    ],
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
@@ -9,7 +17,6 @@
     "suggest": {
         "neos/seo": "*"
     },
-    "name": "joekolade/bureau",
     "autoload": {
         "psr-4": {
             "Joekolade\\Bureau\\": "Classes/"
