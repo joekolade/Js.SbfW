@@ -3,21 +3,22 @@
 {title}
 </h1>
 <dl>
-    <dt>Domain:</dt>
+    <dt><f:translate id="properties.domain" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate>:</dt>
     <dd><a href="{domain}" target="_blank">{domain}</a></dd>
 
-    <dt>cms</dt>
+    <dt><f:translate id="properties.cms" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate></dt>
     <dd>{cms}</dd>
 
-    <dt>version</dt>
+    <dt><f:translate id="properties.version" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate></dt>
     <dd>{version}</dd>
 
-    <dt>hoster</dt>
+    <dt><f:translate id="properties.hoster" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate></dt>
     <dd>{hoster}</dd>
 
 </dl>
 <f:if condition="{gdpr}">
     <f:then>
+        <f:translate id="properties.domain" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate>
         DSGVO - ready
     </f:then>
     <f:else>
@@ -26,19 +27,19 @@
 </f:if>
 
 <f:if condition="{agency}">
-    <h2>Agentur(en)</h2>
+    <h2><f:translate id="properties.agency" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate></h2>
 
     {agency -> f:format.raw()}
 </f:if>
 
 <f:if condition="{contacts -> f:count()} > 0">
-    <h2>Kontakt</h2>
+    <h2><f:translate id="properties.contact" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate></h2>
     <f:for each="{contacts}" as="c">
         {c -> f:format.raw()}
     </f:for>
 </f:if>
 
-<h2>Description</h2>
+<h2><f:translate id="properties.description" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate></h2>
 <div>
 
     {main -> f:format.raw()}
@@ -46,7 +47,7 @@
 </div>
 
 
-<h2>Reference(s)</h2>
+<h2><f:translate id="properties.references" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate></h2>
 <div>
 
     {references -> f:format.raw()}
@@ -54,18 +55,23 @@
 </div>
 <neos:contentElement.wrap node="{node}">
 
-<h2>Recommendation</h2>
+
+    <h2>
+        <f:translate id="customer.recommendation.header" package="Joekolade.Bureau"></f:translate>
+    </h2>
     <p>
         <neos:contentElement.editable property="recommendation" tag="div" />
     </p>
 
-<h2>Recommendation (LT)</h2>
+    <h2>
+        <f:translate id="customer.recommendationLongterm.header" package="Joekolade.Bureau"></f:translate>
+    </h2>
     <p>
     {neos:contentElement.editable(property: 'recommendationLongterm')}
     </p>
 
 
-<h2>Comment</h2>
+<h2><f:translate id="properties.comment" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate></h2>
 <p>
     {neos:contentElement.editable(property: 'comment')}
 </p>

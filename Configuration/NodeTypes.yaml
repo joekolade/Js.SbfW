@@ -337,14 +337,12 @@ InlineEditorOptions: &InlineEditorOptions
         inline: *InlineEditorOptions
     'recommendationLongterm':
       type: string
-      defaultValue: 'no recommendation long term'
       ui:
         label: i18n
         inlineEditable: TRUE
         inline: *InlineEditorOptions
     comment:
       type: string
-      defaultValue: 'no comment'
       ui:
         label: i18n
         inlineEditable: TRUE

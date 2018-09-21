@@ -29,6 +29,12 @@
             <trans-unit id="properties.gdpr" xml:space="preserve">
                     <source>GDPR</source>
             </trans-unit>
+            <trans-unit id="properties.description" xml:space="preserve">
+                    <source>Description</source>
+            </trans-unit>
+            <trans-unit id="properties.references" xml:space="preserve">
+                    <source>Referenzen</source>
+            </trans-unit>
             <trans-unit id="properties.recommendation" xml:space="preserve">
                     <source>Recommendation</source>
             </trans-unit>
@@ -45,7 +51,7 @@
                     <source>Comment</source>
             </trans-unit>
             <trans-unit id="properties.comment.ui.inline.editorOptions.placeholder" xml:space="preserve">
-                    <source>Comment</source>
+                    <source>Comment for the customer</source>
             </trans-unit>
             <trans-unit id="properties.contact" xml:space="preserve">
                     <source>Contact</source>

@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-header" id="heading--{identifier}">
+        <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse--{identifier}" aria-expanded="true" aria-controls="collapse--{identifier}">
+                {title}
+            </button>
+        </h5>
+    </div>
+
+    <div id="collapse--{identifier}" class="collapse show" aria-labelledby="heading--{identifier}" data-parent="#customer__accordion">
+        <div class="card-body">
+
+            <h2>
+                <f:translate id="customer.recommendation.header" package="Joekolade.Bureau"></f:translate>
+            </h2>
+            <p>
+                {recommendation -> f:format.raw()}
+            </p>
+
+            <h2>
+                <f:translate id="customer.recommendationLongterm.header" package="Joekolade.Bureau"></f:translate>
+            </h2>
+            <p>
+                {recommendationLongterm -> f:format.raw()}
+            </p>
+
+        </div>
+    </div>
+</div>

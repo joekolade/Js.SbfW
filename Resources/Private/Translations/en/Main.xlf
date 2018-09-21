@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file product-name="Joekolade.Bureau" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="customer.recommendation.header" xml:space="preserve">
+                    <source>Recommendation</source>
+            </trans-unit>
+            <trans-unit id="customer.recommendationLongterm.header" xml:space="preserve">
+                    <source>Recommendation (longterm)</source>
+            </trans-unit>
+            <trans-unit id="agency.no_customers" xml:space="preserve">
+                    <source>No customers so far!</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

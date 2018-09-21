@@ -10,7 +10,9 @@ Neos:
       defaultLanguage: 'de'
       translation:
         autoInclude:
-          'Joekolade.Bureau': ['NodeTypes/*']
+          'Joekolade.Bureau':
+            - 'NodeTypes/*'
+            - 'Main'
 Flowpack:
   Neos:
     Matomo:

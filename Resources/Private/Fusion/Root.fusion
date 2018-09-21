@@ -50,3 +50,39 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
         }
     }
 }
+
+prototype(Neos.NodeTypes:Internal.Document) < prototype(Neos.NodeTypes:Page.Document) {
+    head {
+        stylesheets.site = Neos.Fusion:Template {
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+            sectionName = 'stylesheets'
+        }
+
+        javascripts.site = Neos.Fusion:Template {
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+            sectionName = 'headScripts'
+        }
+    }
+
+    body {
+        templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+        sectionName = 'body'
+        parts {
+            menu = Neos.Neos:Menu
+        }
+
+        // These are your content areas, you can define as many as you want, just name them and the nodePath.
+        content {
+            // The default content section
+            main = Neos.Neos:PrimaryContent {
+                nodePath = 'main'
+            }
+        }
+
+        javascripts.site = Neos.Fusion:Template {
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+            sectionName = 'bodyScripts'
+        }
+    }
+}
+
