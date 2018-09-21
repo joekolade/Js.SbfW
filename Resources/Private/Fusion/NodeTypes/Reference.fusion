@@ -1,0 +1,4 @@
+prototype(Joekolade.Bureau:Reference) < prototype(Neos.NodeTypes:TextWithImage) {
+    imageClassName = 'img-responsive'
+    maximumWidth = 365
+}

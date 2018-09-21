@@ -24,7 +24,7 @@
         image:
           position: 15
   properties:
-    'referencetitle':
+    referencetitle:
       type: string
       defaultValue: 'Titel der Referenz'
       ui:
@@ -32,7 +32,7 @@
         reloadIfChanged: true
         inspector:
           group: 'reference'
-    'referenceurl':
+    referenceurl:
       type: string
       defaultValue: 'http://www.schaefer-webentwicklung.de'
       ui:
@@ -40,6 +40,63 @@
         reloadIfChanged: true
         inspector:
           group: 'reference'
+    showreference:
+      type: boolean
+      defaultValue: TRUE
+      ui:
+        label: 'Zeige in Referenzliste?'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'reference'
+
+'Joekolade.Bureau:Referencelist':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  ui:
+    label: 'Referenzen Liste'
+    group: 'general'
+    icon: 'fort-awesome'
+  properties:
+    text:
+      type: string
+      defaultValue: '... intro ...'
+      ui:
+        inlineEditable: TRUE
+        inline:
+          editorOptions:
+            placeholder: i18n
+            autoparagraph: true
+            linking:
+              anchor: true
+              title: true
+              relNofollow: true
+              targetBlank: true
+            formatting:
+              strong: true
+              em: true
+              u: false
+              sub: false
+              sup: false
+              del: false
+              p: true
+              h1: true
+              h2: true
+              h3: true
+              h4: true
+              h5: false
+              h6: false
+              pre: false
+              underline: false
+              strikethrough: false
+              removeFormat: false
+              left: false
+              right: false
+              center: false
+              justify: false
+              table: false
+              ol: false
+              ul: false
+              a: true
 
 # --------------------
 # Bureau nodes
@@ -195,8 +252,8 @@ InlineEditorOptions: &InlineEditorOptions
       type: 'Neos.Neos:ContentCollection'
       constraints:
         nodeTypes:
+          'Joekolade.Bureau:Reference': TRUE
           '*': false
-          'Joekolade.Bureau:Reference': true
   ui:
     label: i18n
     group: 'bureau'

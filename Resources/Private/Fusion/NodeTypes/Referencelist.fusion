@@ -1,0 +1,19 @@
+
+
+
+prototype(Joekolade.Bureau:Referencelist) < prototype(Neos.Neos:Content) {
+    references = Neos.Fusion:Array {
+
+        refs = Neos.Fusion:Collection {
+            collection = ${q(site).find('[instanceof Joekolade.Bureau:Customer]').find('[instanceof Joekolade.Bureau:Reference][showreference]')}
+            itemName = 'reference'
+            itemRenderer = Joekolade.Bureau:Reference {
+                image = ${q(reference).property('image')}
+                referencetitle = ${q(reference).property('referencetitle')}
+                text = ${q(reference).property('text')}
+                referenceurl = ${q(reference).property('referenceurl')}
+            }
+        }
+
+    }
+}

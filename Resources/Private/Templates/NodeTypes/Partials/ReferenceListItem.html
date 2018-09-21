@@ -1,0 +1,22 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<div xmlns:f="http://www.w3.org/1999/html"/>{attributes -> f:format.raw()}>
+<hr>
+	<div class="imageWrap">
+		<f:render partial="Image" arguments="{_all}" />
+	</div>
+	<div class="contentWrap">
+		<h2>
+			{reference.referencetitle}
+		</h2>
+		<p>
+			<a href="{referenceurl -> f:format.raw()}" target="_blank">{referenceurl -> f:format.raw()}</a>
+		</p>
+		<div class="context">
+			{neos:contentElement.editable(property: 'text')}
+		</div>
+
+		<f:comment>
+			Tags / Agencies / Contacts ....
+		</f:comment>
+	</div>
+</div>
