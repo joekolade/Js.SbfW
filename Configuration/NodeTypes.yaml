@@ -188,6 +188,13 @@ InlineEditorOptions: &InlineEditorOptions
 'Joekolade.Bureau:Customer':
   superTypes:
     'Joekolade.Bureau:Proto': true
+  childNodes:
+    'references':
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Joekolade.Bureau:Reference': true
   ui:
     label: i18n
     group: 'bureau'

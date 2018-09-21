@@ -19,6 +19,10 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.Neos:Page) {
             nodePath = 'main'
         }
 
+        references  = Neos.Neos:ContentCollection {
+            nodePath = 'references'
+        }
+
 //        contact = Joekolade.Bureau:Person {
 //            node = ${q(node).property('contact').get()}
 //            title = ${q(node).property('title')}
