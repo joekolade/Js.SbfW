@@ -1,5 +1,5 @@
 {
-    "description": "NEOS Site Package for Schaefer - Buero für Webenetwicklung",
+    "description": "NEOS Site Package for Schaefer - Buero für Webentwicklung",
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
@@ -12,7 +12,7 @@
     "name": "joekolade/bureau",
     "autoload": {
         "psr-4": {
-            "Js\\Sbfw\\": "Classes/"
+            "Joekolade\\Bureau\\": "Classes/"
         }
     },
     "extra": {
