@@ -1,0 +1,16 @@
+// bower:scss
+// endbower
+
+@import 'variables';
+
+.wrapper {
+  max-width: $boxed-width;
+  margin: 0 auto;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
