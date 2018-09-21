@@ -189,6 +189,8 @@ InlineEditorOptions: &InlineEditorOptions
   superTypes:
     'Joekolade.Bureau:Proto': true
   childNodes:
+    'main':
+      type: 'Neos.Neos:ContentCollection'
     'references':
       type: 'Neos.Neos:ContentCollection'
       constraints:
