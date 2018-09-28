@@ -1,0 +1,25 @@
+@mixin flexcontainer(){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  > header {
+    width: 100%;
+
+    + .col {
+      padding-left: 0;
+    }
+  }
+  > .col {
+    // Col styles
+    padding: $gutter/2;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

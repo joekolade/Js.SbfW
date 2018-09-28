@@ -1,16 +1,40 @@
+@import 'helper/meyer_reset';
+
 // bower:scss
 // endbower
 
+@import 'helper/fonts_typekit';
+@import 'helper/functions';
+@import 'helper/grid';
+
 @import 'variables';
+
+@import 'partials/all_partials';
+
+@import 'internal';
+
+
 
 .wrapper {
   max-width: $boxed-width;
   margin: 0 auto;
+  padding: $gutter/2;
+  padding-bottom: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  section.content {
+    flex: 1;
+  }
 }
 
 body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  background: $body-bg;
+  font-family: $base-font;
+  color: $text-color;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
 }
 

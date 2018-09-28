@@ -1,0 +1,42 @@
+.wrapper > footer {
+  font-size: 0.85714em;
+  width: calc(100% + #{$gutter});
+  background: map_get($colorscheme, primary);
+  position: relative;
+
+  padding: $gutter*2 $gutter/2 $gutter;
+
+  margin-left: -$gutter/2;
+  margin-right: -$gutter/2;
+
+  color: map_get($colorscheme, third);
+
+  @include flexcontainer;
+
+  header {
+    @include clarendon;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 75%;
+    top: $gutter;
+    left: 50%;
+    background: white;
+    transform: translate(-50%, 0);
+  }
+}

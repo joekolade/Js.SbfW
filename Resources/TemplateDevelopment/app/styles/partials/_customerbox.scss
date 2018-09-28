@@ -1,0 +1,64 @@
+.customerbox {
+  display: block;
+  border: 1px solid $text-color;
+  padding: $gutter/2;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: $gutter/2;
+
+  header {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: .4em;
+
+    h2, h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+}
+.customerbox__target {
+  color: $text-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+.customerbox__cms {
+  .fa-typo3 {
+    color: #ff8c2b;
+  }
+}
+.customerbox__domain {
+  position: relative;
+  z-index: 3;
+}
+.customerbox__arrow {
+  position: absolute;
+  right: $gutter/2;
+  top: 50%;
+  transform: translate(-$gutter/2, -50%);
+  transition: getTransition();
+  font-size: 2.333333em;
+  color: $link-color;
+
+  .customerbox:hover & {
+    transform: translate(0, -50%);
+    color: $link-color-hover;
+  }
+}

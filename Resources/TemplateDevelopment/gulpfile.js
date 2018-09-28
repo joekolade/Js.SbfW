@@ -165,7 +165,34 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+
+// gulp: neos
+gulp.task('neosCopyStyles', ['html'], () => {
+    return gulp.src([
+        'dist/styles/**/*'
+    ], {
+        dot: true
+    }).pipe(gulp.dest('../Public/Styles'));
+});
+gulp.task('neosCopyJs', () => {
+    return gulp.src([
+        'dist/scripts/**/*'
+    ], {
+        dot: true
+    }).pipe(gulp.dest('../Public/JavaScript'));
+});
+gulp.task('neosCopyImages', () => {
+    return gulp.src([
+        'dist/images/**/*'
+    ], {
+        dot: true
+    }).pipe(gulp.dest('../Public/Images'));
+});
+gulp.task('neos', ['neosCopyStyles', 'neosCopyImages'], () => {
+    return gulp.start('neosCopyJs');
+});
+
+gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'neos'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

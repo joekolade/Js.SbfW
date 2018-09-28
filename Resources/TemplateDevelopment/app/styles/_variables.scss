@@ -1,15 +1,57 @@
 /**
+  --------------------------------
   Variables
+  --------------------------------
+  --------------------------------
  */
 
-$color-blue: #2f8695;
 
-$color: (
-  'primary': $color-blue
+/**
+  Colors
+  --------------------------------
+ */
+$color-blue: #2f8695;
+$color-dark-grey: #393939;
+$color-light-grey: #D8D8D8;
+
+$colorscheme: (
+  primary: $color-blue,
+  secondary: $color-dark-grey,
+  third: white,
+  alt: $color-light-grey
 );
+
+$body-bg: #fafafa;
+$text-color: map_get($colorscheme, secondary);
+$link-color: map_get($colorscheme, primary);
+$link-color-hover: darken($link-color, 20%);
+
+$box-shadow-hover: 0 0 8px rgba(0,0,0,0.2);
 
 /**
   Grid System
+  --------------------------------
  */
 
-$boxed-width: 67.5rem;
+$gutter: 1.75rem; // 28px
+$grid-cols: 12;
+$boxed-width: 67.5rem; // 1080px
+
+/**
+  Fonts & Typo
+  --------------------------------
+ */
+$base-font: adelle();
+$header-font: clarendon();
+
+$base-font-size: 0.875rem; // 14px
+$base-line-height: 1.5;
+
+$header-font-size: (
+  h1: ($base-font-size * 2.5), // 35px
+  h2: ($base-font-size * 2), // 28px
+  h3: ($base-font-size * 1.642857), // 23px
+  h4: ($base-font-size * 1.357143), // 19px
+  h5: ($base-font-size * 1.1), // 15px
+  h6: ($base-font-size * 1) // 14px
+);

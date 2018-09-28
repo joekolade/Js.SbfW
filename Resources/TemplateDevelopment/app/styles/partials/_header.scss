@@ -1,0 +1,75 @@
+.wrapper > header {
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+}
+.logo__image {
+  margin-right: 1em;
+}
+.logo__claim {
+  h1,h2 {
+    line-height: 1;
+    margin: 0;
+    color: $link-color;
+
+    &::after {
+      display: none;
+    }
+  }
+  h1 {
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 1em;
+  }
+}
+
+$nav-toggle-height: 20px;
+$nav-toggle-width: 1.4 * $nav-toggle-height;
+$nav-toggle-barwidth: 2px;
+
+.navigation__toggle {
+  position: absolute;
+  right: 0;
+  top: calc(50% - #{$nav-toggle-height/2});
+  width: $nav-toggle-width;
+  height: $nav-toggle-height;
+  overflow: hidden;
+
+  .bars {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: calc(50% - #{$nav-toggle-barwidth/2});
+    height: $nav-toggle-barwidth;
+    background-color: $link-color;
+    transition: getTransition();
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      right: 0;
+      top: 0;
+      height: inherit;
+      background-color: inherit;
+      transition: getTransition();
+    }
+    &::before {
+      transform: translate(0, -#{$nav-toggle-height/2 - $nav-toggle-barwidth/2});
+    }
+    &::after {
+      transform: translate(4px, #{$nav-toggle-height/2 - $nav-toggle-barwidth/2});
+    }
+  }
+
+  &:hover {
+    .bars::after {
+      transform: translate(0, #{$nav-toggle-height/2 - $nav-toggle-barwidth/2});
+    }
+  }
+}

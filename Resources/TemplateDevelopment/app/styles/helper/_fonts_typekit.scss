@@ -1,0 +1,29 @@
+@import url("https://use.typekit.net/vyn2soz.css");
+
+
+@function clarendon(){
+  @return "clarendon-urw", serif;
+}
+@function adelle(){
+  @return "adelle-sans", sans-serif;
+}
+
+@mixin clarendon(){
+  font-weight: 300;
+  font-family: clarendon();
+
+  b, strong {
+    font-weight: normal;
+  }
+}
+@mixin adelle(){
+  font-weight: normal;
+  font-family: adelle();
+}
+
+.clarendon {
+  @include clarendon;
+}
+.adelle {
+  @include adelle;
+}

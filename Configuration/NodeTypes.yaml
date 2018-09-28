@@ -118,7 +118,7 @@ InlineEditorOptions: &InlineEditorOptions
       sup: false
       del: false
       p: true
-      h1: true
+      h1: false
       h2: true
       h3: true
       h4: true
@@ -134,7 +134,7 @@ InlineEditorOptions: &InlineEditorOptions
       justify: false
       table: false
       ol: false
-      ul: false
+      ul: true
       a: true
 
 'Neos.Neos:Document':

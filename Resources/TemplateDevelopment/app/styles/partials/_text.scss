@@ -1,0 +1,57 @@
+// Texts
+
+// Loop through header list
+@each $header in $header-font-size {
+  #{nth($header, 1)} {
+    font-family: $header-font;
+    font-size: nth($header, 2);
+    font-weight: 300;
+    position: relative;
+
+    margin-bottom: 1em;
+
+    &::after {
+      content: '';
+      min-width: 50%;
+      width: 50%;
+      height: 1px;
+      background: map_get($colorscheme, alt);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+b,strong {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0.75em;
+}
+
+a {
+  color: $link-color;
+  transition: getTransition();
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $link-color-hover;
+  }
+
+  .button {
+
+    &:active,
+    &:hover {
+      box-shadow: $box-shadow-hover;
+    }
+  }
+}
+
+@media screen {
+  .sr-only {
+    display: none;
+  }
+}
