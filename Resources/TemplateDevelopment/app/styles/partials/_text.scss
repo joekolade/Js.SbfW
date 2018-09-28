@@ -1,4 +1,20 @@
+// --------------------
 // Texts
+// --------------------
+// --------------------
+
+
+b,strong {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0.75em;
+}
+
+
+// Header
+// --------------------
 
 // Loop through header list
 @each $header in $header-font-size {
@@ -8,28 +24,28 @@
     font-weight: 300;
     position: relative;
 
-    margin-bottom: 1em;
-
-    &::after {
-      content: '';
-      min-width: 50%;
-      width: 50%;
-      height: 1px;
-      background: map_get($colorscheme, alt);
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
+    margin-bottom: 0.5em;
   }
 }
 
-b,strong {
-  font-weight: bold;
+h1,h2,h3 {
+  margin-bottom: 1em;
+
+  &::after {
+    content: '';
+    min-width: 50%;
+    width: 50%;
+    height: 1px;
+    background: map_get($colorscheme, alt);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 
-p {
-  margin-bottom: 0.75em;
-}
+
+// Links
+// --------------------
 
 a {
   color: $link-color;
@@ -46,6 +62,45 @@ a {
     &:active,
     &:hover {
       box-shadow: $box-shadow-hover;
+    }
+  }
+}
+
+
+// Lists
+// --------------------
+// colored bullet
+$list-bullet-color: inherit;
+
+ul {
+  list-style: none;
+  margin-left: 0.9em;
+
+  li::before {
+    content: "-";
+    color: $list-bullet-color;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}
+
+
+// Specials
+// --------------------
+
+.content__backlink {
+  margin-bottom: $gutter;
+
+  i,.svg-inline--fa {
+    display: inline-block;
+    margin-right: 1em;
+    transform: translate(#{$gutter/2}, 0);
+    transition: getTransition();
+  }
+  a:hover {
+    i,.svg-inline--fa {
+      transform: translate(#{$gutter/4}, 0);
     }
   }
 }

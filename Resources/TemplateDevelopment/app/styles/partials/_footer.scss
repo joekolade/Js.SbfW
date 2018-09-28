@@ -11,14 +11,10 @@
 
   color: map_get($colorscheme, third);
 
-  @include flexcontainer;
+  @include colBox;
 
   header {
     @include clarendon;
-  }
-
-  .col {
-    width: 50%;
   }
 
   a {

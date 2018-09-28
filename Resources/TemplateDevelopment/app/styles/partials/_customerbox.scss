@@ -24,7 +24,19 @@
   &:hover {
     box-shadow: $box-shadow-hover;
   }
+
 }
+
+// Small customerbox
+.customerbox--small {
+  border: none;
+  padding: 0;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
 .customerbox__target {
   color: $text-color;
 
@@ -39,16 +51,20 @@
   }
 }
 
-.customerbox__cms {
+.customerbox__item {
+  margin-bottom: .25em;
+
   .fa-typo3 {
     color: #ff8c2b;
   }
 }
-.customerbox__domain {
+
+.customerbox__item--domain {
   position: relative;
   z-index: 3;
 }
-.customerbox__arrow {
+
+.customerbox__item--arrow {
   position: absolute;
   right: $gutter/2;
   top: 50%;

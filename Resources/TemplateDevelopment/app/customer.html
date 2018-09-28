@@ -59,70 +59,104 @@
     </section>
     <section class="content">
 
+        <div class="content__backlink">
+            <a href="agency.html"><i class="fal fa-arrow-left"></i> zur Übersicht</a>
+        </div>
 
-        <h2>Kunden</h2>
-        <section class="customerbox">
-            <header>
-                <h3>Seybold+Burka</h3>
-            </header>
-            <div class="customerbox__cms">
-                <i class="fab fa-typo3"></i>
-                TYPO3 CMS 7.6
+        <h2>Seybold+Burka</h2>
+        <section class="factbox">
+            <div class="col">
+                <header>
+                    <h3>Technik</h3>
+                </header>
+                <section class="customerbox customerbox--small">
+                    <div class="customerbox__item customerbox__item--domain">
+                        <i class="fal fa-globe"></i>
+                        <a href="https://www.seybold-burka.com" target="_blank">https://www.seybold-burka.com</a>
+                    </div>
+                    <div class="customerbox__item customerbox__item--cms">
+                        <i class="fab fa-typo3"></i>
+                        TYPO3 CMS 7.6
+                    </div>
+                    <div class="customerbox__item customerbox__item--hoster">
+                        <i class="fal fa-home"></i>
+                        SYSTEMWORKS Edv GmbH
+                    </div>
+                    <div class="customerbox__item customerbox__item--gdpr">
+                        <i class="fal fa-shield-check"></i>
+                        DSGVO ready
+                    </div>
+                </section>
             </div>
-            <div class="customerbox__domain">
-                <i class="fal fa-globe"></i>
-                <a href="https://www.seybold-burka.com" target="_blank">https://www.seybold-burka.com</a>
-            </div>
-            <div class="customerbox__arrow">
-                <i class="fal fa-arrow-right"></i>
-            </div>
-        </section>
-        <section class="customerbox">
-            <header>
-                <h3>Burka</h3>
-            </header>
-            <div class="customerbox__cms">
-                <i class="fab fa-typo3"></i>
-                TYPO3 CMS 7.6
-            </div>
-            <div class="customerbox__domain">
-                <i class="fal fa-globe"></i>
-                <a href="https://www.burka-metallbau.de" target="_blank">https://www.burka-metallbau.de</a>
-            </div>
-            <div class="customerbox__arrow">
-                <i class="fal fa-arrow-right"></i>
-            </div>
-        </section>
-        <section class="customerbox">
-            <header>
-                <h3>Weiss GmbH</h3>
-            </header>
-            <div class="customerbox__cms">
-                <i class="fab fa-typo3"></i>
-                TYPO3 CMS 7.6
-            </div>
-            <div class="customerbox__domain">
-                <i class="fal fa-globe"></i>
-                <a href="https://www.burka-metallbau.de" target="_blank">https://www.burka-metallbau.de</a>
-            </div>
-            <div class="customerbox__arrow">
-                <i class="fal fa-arrow-right"></i>
+            <div class="col">
+                <header>
+                    <h3>Beschreibung</h3>
+                </header>
+                <p>
+                    TYPO3 CMS Webseite (Template im fileadmin). Vorgänger der fetschersite.
+                </p>
+                <p>
+                    Einfache Webseite mit Formular.
+                </p>
+                <p>
+                    <b>Launch</b>: Oktober 2016
+                </p>
             </div>
         </section>
-        <section class="customerbox">
+        <section class="box box--bg">
             <header>
-                <h3>Arbeitsbühnen Weiss</h3>
+                <h3>Empfehlung</h3>
             </header>
-            <div class="customerbox__cms">
-                <i class="fab fa-typo3"></i>
-                TYPO3 CMS 7.6
+            <div class="recommendationbox__content">
+                <h4>Minimum</h4>
+                <p>
+                    Update auf TYPO3 CMS 8.7 LTS bis zum 1. Dezember 2018.
+                </p>
+                <h4>
+                    Empfohlen
+                </h4>
+                <p>
+                    Auf TYPO3 CMS 9 LTS zum 1. Dezember 2018, da hier der Support für 7 ausläuft. Bis dahin sollten auch
+                    die restlichen fehlenden Kompatibilitöten beseitigt sein (siehe Extensions-Liste).
+                </p>
             </div>
-            <div class="customerbox__domain">
-                <i class="fal fa-globe"></i>
-                <a href="https://www.burka-metallbau.de" target="_blank">https://www.burka-metallbau.de</a>
-            </div>
-            <div class="customerbox__arrow">
-                <i class="fal fa-arrow-right"></i>
+        </section>
+        <section class="box">
+            <header>
+                <h3>Hinweis(e)</h3>
+            </header>
+            <div class="recommendationbox__content">
+                <p>
+                    Liegt auf dem selben Server wie Weiss Metallverarbeitung.
+                </p>
+                <p>
+                    PHP-Shell wird für die Installation
+                    eingesetzt: https://www.arbeitsbuehnen-weiss.de/phpshell-2.4/phpshell.php
+                </p>
+                <p>
+                    PHP 7.0.31 (7.2 möglich siehe Weiss Metallverarbeitung)
+                </p>
+                <p>
+                    MySQL 5.5.5
+                </p>
+                <h4>
+                    TYPO3 Extensions
+                </h4>
+                <ul>
+                    <li>sourceopt (8.7)</li>
+                    <li>scriptmerger (8.7)</li>
+                    <li>powermail (9.5)</li>
+                    <li>youtubevideo (9.5)</li>
+                    <li>mask (8.7, 4.0.0 für 9.3)</li>
+                    <li>jh_magnificpopup (8.7)</li>
+                    <li>gridelements (8.7, WIP)</li>
+                    <li>css_styled_content (!)</li>
+                    <li>cs_seo (3.0.3 dev für 9.2.99)</li>
+                    <li>cookieconsent2 (7.6)</li>
+                    <li>bootstrap_grids (8.7)</li>
+                    <li>realurl (8.7, not necessary any more?)</li>
+                    <li>t3adminer (9.3)</li>
+                </ul>
             </div>
         </section>
     </section>
@@ -152,9 +186,15 @@
     </footer>
 </div>
 
-<script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/light.js" integrity="sha384-2R0W5LA7dXp3ze/WhvjXlUcDaHRhtGlKYxN9QMhGDdjmj2EI1bub5ysSwofJwGfI" crossorigin="anonymous"></script>
-<script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/brands.js" integrity="sha384-am5AyalpQCEfbKe6FYiGZc2vX080nrcueZmrbkljxLdQDJ5q5Vu9QDROD/QefEp1" crossorigin="anonymous"></script>
-<script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/fontawesome.js" integrity="sha384-u3o36ga3mMU6/lK/zdiER4h7pPtAK7wBuN0DrZPH22v01RZL8bKZkULIjxcx2/X/" crossorigin="anonymous"></script>
+<script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/light.js"
+        integrity="sha384-2R0W5LA7dXp3ze/WhvjXlUcDaHRhtGlKYxN9QMhGDdjmj2EI1bub5ysSwofJwGfI"
+        crossorigin="anonymous"></script>
+<script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/brands.js"
+        integrity="sha384-am5AyalpQCEfbKe6FYiGZc2vX080nrcueZmrbkljxLdQDJ5q5Vu9QDROD/QefEp1"
+        crossorigin="anonymous"></script>
+<script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/fontawesome.js"
+        integrity="sha384-u3o36ga3mMU6/lK/zdiER4h7pPtAK7wBuN0DrZPH22v01RZL8bKZkULIjxcx2/X/"
+        crossorigin="anonymous"></script>
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <!-- endbower -->

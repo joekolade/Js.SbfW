@@ -1,0 +1,19 @@
+.box {
+  padding: 0;
+  margin-bottom: $gutter;
+
+  header {
+    h2,h3 {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.box--bg {
+  background: map_get($colorscheme, alt);
+  padding: $gutter/2 $gutter;
+  margin-left: -$gutter/2;
+  margin-right: -$gutter/2;
+}

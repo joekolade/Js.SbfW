@@ -1,0 +1,11 @@
+.factbox {
+  @include colBox;
+
+  header {
+    h2,h3 {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
