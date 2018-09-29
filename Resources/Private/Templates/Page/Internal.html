@@ -56,22 +56,25 @@
 </head>
 <body>
 <f:section name="body">
+    <div class="wrapper">
 
+        {parts.header -> f:format.raw()}
 
-    <div id="wrapper" style="text-align: center;">
-        <a class="link" href="/">
-            <h1 class="titel">Schäfer - Büro für Webentwicklung</h1>
-            <img src="{f:uri.resource(path: 'Images/schaefer-webentwicklung_tower.svg', package: 'Joekolade.Bureau')}"
-                 alt="Logo: Schäfer" width="350"/>
-        </a>
+        {parts.credentials -> f:format.raw()}
 
-        {content.main -> f:format.raw()}
+        <section class="content">
+            {content -> f:format.raw()}
+        </section>
 
     </div>
 
 </f:section>
 <f:section name="bodyScripts">
-    <!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
+    <script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/light.js" integrity="sha384-2R0W5LA7dXp3ze/WhvjXlUcDaHRhtGlKYxN9QMhGDdjmj2EI1bub5ysSwofJwGfI" crossorigin="anonymous"></script>
+    <script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/brands.js" integrity="sha384-am5AyalpQCEfbKe6FYiGZc2vX080nrcueZmrbkljxLdQDJ5q5Vu9QDROD/QefEp1" crossorigin="anonymous"></script>
+    <script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/fontawesome.js" integrity="sha384-u3o36ga3mMU6/lK/zdiER4h7pPtAK7wBuN0DrZPH22v01RZL8bKZkULIjxcx2/X/" crossorigin="anonymous"></script>
+
+    <script src="{f:uri.resource(path: 'JavaScript/main.js', package: 'Joekolade.Bureau')}">
 </f:section>
 </body>
 </html>

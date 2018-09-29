@@ -29,6 +29,12 @@
             <trans-unit id="properties.gdpr" xml:space="preserve">
                     <source>GDPR</source>
             </trans-unit>
+            <trans-unit id="properties.gdpr.0" xml:space="preserve">
+                    <source>NOT gdpr compliant</source>
+            </trans-unit>
+            <trans-unit id="properties.gdpr.1" xml:space="preserve">
+                    <source>gdpr compliant</source>
+            </trans-unit>
             <trans-unit id="properties.description" xml:space="preserve">
                     <source>Description</source>
             </trans-unit>

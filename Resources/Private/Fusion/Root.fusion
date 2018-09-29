@@ -12,6 +12,11 @@ root {
     }
 }
 
+prototype(Joekolade.Bureau:InternalPartial) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Partials/InternalPartials.html'
+    sectionName = 'default'
+}
+
 prototype(Neos.NodeTypes:Page.Document) >
 prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 
@@ -33,7 +38,17 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
         templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
         sectionName = 'body'
         parts {
+
             menu = Neos.Neos:Menu
+
+            header = Joekolade.Bureau:InternalPartial {
+                sectionName = 'header'
+            }
+
+            credentials = Joekolade.Bureau:InternalPartial {
+                sectionName = 'credentials'
+                // TODO: credentials
+            }
         }
 
         // These are your content areas, you can define as many as you want, just name them and the nodePath.
@@ -54,33 +69,28 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 prototype(Neos.NodeTypes:Internal.Document) < prototype(Neos.NodeTypes:Page.Document) {
     head {
         stylesheets.site = Neos.Fusion:Template {
-            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Internal.html'
             sectionName = 'stylesheets'
         }
 
         javascripts.site = Neos.Fusion:Template {
-            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Internal.html'
             sectionName = 'headScripts'
         }
     }
 
     body {
-        templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+        templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Internal.html'
         sectionName = 'body'
         parts {
             menu = Neos.Neos:Menu
         }
 
         // These are your content areas, you can define as many as you want, just name them and the nodePath.
-        content {
-            // The default content section
-            main = Neos.Neos:PrimaryContent {
-                nodePath = 'main'
-            }
-        }
+        content >
 
         javascripts.site = Neos.Fusion:Template {
-            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Internal.html'
             sectionName = 'bodyScripts'
         }
     }

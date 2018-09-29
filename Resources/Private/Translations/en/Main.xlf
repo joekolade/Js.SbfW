@@ -2,6 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file product-name="Joekolade.Bureau" source-language="en" datatype="plaintext">
         <body>
+            <trans-unit id="customer.hardware.header" xml:space="preserve">
+                    <source>Hardware</source>
+            </trans-unit>
             <trans-unit id="customer.recommendation.header" xml:space="preserve">
                     <source>Recommendation</source>
             </trans-unit>

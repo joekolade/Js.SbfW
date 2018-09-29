@@ -1,22 +1,24 @@
 prototype(Joekolade.Bureau:Agency.Document) < prototype(Neos.NodeTypes:Internal.Document) {
     body {
-        templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Agency.html'
-        title = ${q(node).property('title')}
-        website = ${q(node).property('website')}
 
-        customerlist = Joekolade.Bureau:ChildCustomers
-        customerlist = Neos.Fusion:Collection {
-            collection = ${q(site).find('[instanceof Joekolade.Bureau:Customer][agency*="'+node+'"]')}
-            itemName = 'customer'
-            itemRenderer = Neos.Fusion:Template {
-                templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/Customer.html'
-                title = ${q(customer).property('title')}
-                identifier = ${q(customer).property('_identifier')}
-                recommendation = ${q(customer).property('recommendation')}
-                recommendationLongterm = ${q(customer).property('recommendationLongterm')}
+        # Agency content
+        content = Neos.Fusion:Template {
+            templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Agency.html'
+            sectionName = 'content'
+
+            customerlist = Neos.Fusion:Collection {
+                collection = ${q(site).find('[instanceof Joekolade.Bureau:Customer][agency*="'+node+'"]')}
+                itemName = 'customer'
+                itemRenderer = Neos.Fusion:Template {
+                    templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/Customer.html'
+                    customer = ${customer}
+                    title = ${q(customer).property('title')}
+                    domain = ${q(customer).property('domain')}
+                    cms = ${q(customer).property('cms')}
+                    version = ${q(customer).property('version')}
+                    #identifier = ${q(customer).property('_identifier')}
+                }
             }
         }
-
-        contact = Joekolade.Bureau:ChildPersons
     }
 }

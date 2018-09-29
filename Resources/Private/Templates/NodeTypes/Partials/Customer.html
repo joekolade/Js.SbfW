@@ -1,29 +1,19 @@
-<div class="card">
-    <div class="card-header" id="heading--{identifier}">
-        <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse--{identifier}" aria-expanded="true" aria-controls="collapse--{identifier}">
-                {title}
-            </button>
-        </h5>
+{namespace neos=Neos\Neos\ViewHelpers}
+<section class="customerbox">
+    <header>
+        <neos:link.node node="{customer}" class="customerbox__target">
+            <h3>{title}</h3>
+        </neos:link.node>
+    </header>
+    <div class="customerbox__item customerbox__item--cms">
+        <i class="fab fa-typo3"></i>
+        {cms} {version}
     </div>
-
-    <div id="collapse--{identifier}" class="collapse show" aria-labelledby="heading--{identifier}" data-parent="#customer__accordion">
-        <div class="card-body">
-
-            <h2>
-                <f:translate id="customer.recommendation.header" package="Joekolade.Bureau"></f:translate>
-            </h2>
-            <p>
-                {recommendation -> f:format.raw()}
-            </p>
-
-            <h2>
-                <f:translate id="customer.recommendationLongterm.header" package="Joekolade.Bureau"></f:translate>
-            </h2>
-            <p>
-                {recommendationLongterm -> f:format.raw()}
-            </p>
-
-        </div>
+    <div class="customerbox__item customerbox__item--domain">
+        <i class="fal fa-globe"></i>
+        <a href="{domain}" target="_blank">{domain}</a>
     </div>
-</div>
+    <div class="customerbox__item customerbox__item--arrow">
+        <i class="fal fa-arrow-right"></i>
+    </div>
+</section>

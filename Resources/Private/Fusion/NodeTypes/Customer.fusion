@@ -1,51 +1,43 @@
-prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.Neos:Page) {
+prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Internal.Document) {
     body {
-        templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Customer.html'
+        # customer content
+        content >
+        content = Neos.NodeTypes:Page.Document {
+            head >
+            httpResponseHead >
+            body {
+                content >
+                templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Customer.html'
+                sectionName = 'body'
 
-        title = ${q(node).property('title')}
+                title = ${q(node).property('title')}
 
-        domain = ${q(node).property('domain')}
-        cms = ${q(node).property('cms')}
-        version = ${q(node).property('version')}
-        hoster = ${q(node).property('hoster')}
+                domain = ${q(node).property('domain')}
+                cms = ${q(node).property('cms')}
+                version = ${q(node).property('version')}
+                hoster = ${q(node).property('hoster')}
 
-        gdpr = ${q(node).property('gdpr')}
+                gdpr = ${q(node).property('gdpr')}
 
-        recommendation = ${q(node).property('recommendation')}
-        recommendationLongterm = ${q(node).property('recommendationLongterm')}
-        comment = ${q(node).property('comment')}
+                recommendation = ${q(node).property('recommendation')}
+                recommendationLongterm = ${q(node).property('recommendationLongterm')}
+                comment = ${q(node).property('comment')}
 
-        main = Neos.Neos:PrimaryContent {
-            nodePath = 'main'
-        }
+                main = Neos.Neos:PrimaryContent {
+                    nodePath = 'main'
+                }
 
-        references  = Neos.Neos:ContentCollection {
-            nodePath = 'references'
-        }
+                references = Neos.Neos:ContentCollection {
+                    nodePath = 'references'
+                }
 
-//        contact = Joekolade.Bureau:Person {
-//            node = ${q(node).property('contact').get()}
-//            title = ${q(node).property('title')}
-//        }
-        contacts = Neos.Fusion:RawCollection {
-            collection = ${q(node).property('contact')}
-            itemName = 'contact'
-            itemRenderer = Neos.Fusion:Template {
-                templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/Contact.html'
-                contact = ${contact}
-                title = ${q(contact).property('title')}
-                email = ${q(contact).property('email')}
+                agency = ${q(node).property('agency')}
             }
-        }
-
-        agency = Neos.Fusion:Template {
-            templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/Agency.html'
-            agency = ${q(node).property('agency')}
-            title = ${q(agency).property('title')}
         }
     }
 }
 
+// Deprecated!
 prototype(Joekolade.Bureau:ChildCustomers) < prototype(Neos.Fusion:Collection) {
     @process.wrap = ${'<ul>' + value + '</ul>'}
     collection = ${q(node).find('[instanceof Joekolade.Bureau:Customer]')}

@@ -1,19 +1,6 @@
 {namespace neos=Neos\Neos\ViewHelpers}
-<body>
-<f:section name="body">
 
-    <h1>{title}</h1>
-    <f:if condition="{website}">
-        <dl>
-            <dt>
-                <f:translate id="properties.website" source="NodeTypes/Agency" package="Joekolade.Bureau"></f:translate>
-            </dt>
-            <dd><a href="{website}" target="_blank">{website}</a></dd>
-        </dl>
-    </f:if>
-
-    <f:render partial="Contact" arguments="{contact: contact}"></f:render>
-
+<f:section name="content">
     <f:if condition="{customerlist}">
         <f:then>
             <h2>
@@ -26,7 +13,6 @@
         <f:else>
             <f:translate id="agency.no_customers" package="Joekolade.Bureau"></f:translate>
         </f:else>
+
     </f:if>
 </f:section>
-</body>
-
