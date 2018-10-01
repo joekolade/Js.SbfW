@@ -1,0 +1,138 @@
+InlineEditorOptions: &InlineEditorOptions
+  editorOptions:
+    placeholder: i18n
+    autoparagraph: true
+    linking:
+      anchor: true
+      title: true
+      relNofollow: true
+      targetBlank: true
+    formatting:
+      strong: true
+      em: true
+      u: false
+      sub: false
+      sup: false
+      del: false
+      p: true
+      h1: false
+      h2: true
+      h3: true
+      h4: true
+      h5: false
+      h6: false
+      pre: false
+      underline: false
+      strikethrough: false
+      removeFormat: false
+      left: false
+      right: false
+      center: false
+      justify: false
+      table: false
+      ol: false
+      ul: true
+      a: true
+
+'Joekolade.Bureau:Customer':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  childNodes:
+    'main':
+      type: 'Neos.Neos:ContentCollection'
+    'references':
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'Joekolade.Bureau:Reference': TRUE
+          '*': false
+  ui:
+    label: i18n
+    group: 'bureau'
+    icon: 'icon-cube'
+    inlineEditable: TRUE
+    inspector:
+      tabs:
+        customer:
+          label: i18n
+          position: 1
+          icon: 'icon-cube'
+      groups:
+        customer:
+          label: i18n
+          icon: 'icon-cube'
+          position: before general
+          tab: customer
+  properties:
+    domain:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    cms:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    version:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    hoster:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    gdpr:
+      type: boolean
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+    agency:
+      type: reference
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+          editorOptions:
+            nodeTypes: ['Joekolade.Bureau:Agency']
+    contact:
+      type: references
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+          editorOptions:
+            nodeTypes: ['Joekolade.Bureau:Person']
+    recommendation:
+      type: string
+      label: i18n
+      ui:
+        reloadIfChanged: TRUE
+        inlineEditable: TRUE
+        inline: *InlineEditorOptions
+    'recommendationLongterm':
+      type: string
+      ui:
+        label: i18n
+        inlineEditable: TRUE
+        inline: *InlineEditorOptions
+    comment:
+      type: string
+      ui:
+        label: i18n
+        inlineEditable: TRUE
+        inline: *InlineEditorOptions

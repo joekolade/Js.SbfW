@@ -1,0 +1,37 @@
+'Joekolade.Bureau:Person':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  constraints:
+    nodeTypes:
+      '*': false
+  ui:
+    label: i18n
+    group: 'bureau'
+    icon: 'icon-id-card-o'
+    inspector:
+      tabs:
+        person:
+          label: i18n
+          icon: 'icon-id-card-o'
+          position: 1
+      groups:
+        person:
+          label: i18n
+          icon: 'icon-id-card-o'
+          position: 1
+          tab: person
+  properties:
+    position:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: person
+    email:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: person

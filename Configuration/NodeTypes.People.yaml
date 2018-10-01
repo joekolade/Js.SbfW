@@ -1,0 +1,10 @@
+'Joekolade.Bureau:People':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  constraints:
+    nodeTypes:
+      'Joekolade.Bureau:Person': true
+  ui:
+    group: 'bureau'
+    icon: 'icon-users'
+    label: i18n

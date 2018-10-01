@@ -1,0 +1,10 @@
+'Joekolade.Bureau:Customers':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  constraints:
+    nodeTypes:
+      'Joekolade.Bureau:Customer': true
+  ui:
+    group: 'bureau'
+    icon: 'icon-cubes'
+    label: i18n
