@@ -1,6 +1,3 @@
-##
-# A simple "Login form" plugin that demonstrates "Frontend authorization"
-#
 'Joekolade.Bureau:LoginForm':
   superTypes:
     'Neos.Neos:Plugin': true
