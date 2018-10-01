@@ -34,6 +34,7 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
         }
     }
 
+    bodyTag.attributes.class = 'public'
     body {
         templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
         sectionName = 'body'

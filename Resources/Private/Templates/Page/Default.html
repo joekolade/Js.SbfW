@@ -54,16 +54,18 @@
     </f:section>
 
 </head>
-<body>
+<body class="public">
 <f:section name="body">
 
 
-    <div id="wrapper" style="text-align: center;">
-        <a class="link" href="/">
-            <h1 class="titel">Schäfer - Büro für Webentwicklung</h1>
-            <img src="{f:uri.resource(path: 'Images/schaefer-webentwicklung_tower.svg', package: 'Joekolade.Bureau')}"
-                 alt="Logo: Schäfer" width="350"/>
-        </a>
+    <div class="wrapper" style="text-align: center;">
+        <header>
+            <a class="link" href="/">
+                <h1 class="titel">Schäfer - Büro für Webentwicklung</h1>
+                <img src="{f:uri.resource(path: 'Images/schaefer-webentwicklung_tower.svg', package: 'Joekolade.Bureau')}"
+                     alt="Logo: Schäfer" width="350"/>
+            </a>
+        </header>
 
         {content.main -> f:format.raw()}
 
