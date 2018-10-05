@@ -104,9 +104,7 @@
     nodeTypes:
       'Joekolade.Bureau:People': false
       'Joekolade.Bureau:Person': false
-      'Joekolade.Bureau:Agencies': false
       'Joekolade.Bureau:Agency': false
-      'Joekolade.Bureau:Customers': false
       'Joekolade.Bureau:Customer': false
 
 'Joekolade.Bureau:Proto':
@@ -124,9 +122,8 @@
     'Joekolade.Bureau:Proto': true
   constraints:
     nodeTypes:
-      'Joekolade.Bureau:Agencies': true
-      'Joekolade.Bureau:Customers': true
-      'Joekolade.Bureau:People': true
+      'Joekolade.Bureau:Agency': true
+      'Joekolade.Bureau:Person': true
   ui:
     group: 'bureau'
     icon: 'icon-folder-o'
