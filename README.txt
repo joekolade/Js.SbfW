@@ -11,11 +11,11 @@ TODO:
             x admin url postfix
             x kann Customer zugewiesen werden
 
-        - Joekolade.Bureau:Hoster Nodetype
-            - title
-            - let's encrypt
-            - website
-            - adminurl
+        x Joekolade.Bureau:Hoster Nodetype
+            x title
+            x let's encrypt
+            x website
+            x adminurl
             - kann Customer zugewiesen werden
                 - Field
                 - Template

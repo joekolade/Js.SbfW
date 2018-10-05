@@ -22,6 +22,22 @@
                 <f:link.external uri="{controlpanel}" target="_blank">{controlpanel}</f:link.external>
             </dd>
             </f:if>
+            <dt>
+                <f:translate id="properties.usesletsencrypt" source="NodeTypes/Hoster" package="Joekolade.Bureau"></f:translate>
+            </dt>
+            <dd>
+                <f:if condition="{usesletsencrypt}">
+                    <f:then>
+                        <i class="fal fa-shield-check"></i>
+                        <f:translate id="properties.usesletsencrypt.1" source="NodeTypes/Hoster" package="Joekolade.Bureau"></f:translate>
+                    </f:then>
+                    <f:else>
+                        <i class="fal fa-ban" style="color:Tomato"></i>
+                        <f:translate id="properties.usesletsencrypt.0" source="NodeTypes/Hoster" package="Joekolade.Bureau"></f:translate>
+                    </f:else>
+                </f:if>
+
+            </dd>
         </dl>
     </section>
 </f:section>

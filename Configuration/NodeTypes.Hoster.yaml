@@ -43,3 +43,10 @@
             assets: FALSE
             nodeTypes: []
             placeholder: 'Bitte Link angeben'
+    usesletsencrypt:
+      type: boolean
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: hoster
