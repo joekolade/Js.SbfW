@@ -53,10 +53,6 @@
 
 .customerbox__item {
   margin-bottom: .25em;
-
-  .fa-typo3 {
-    color: #ff8c2b;
-  }
 }
 
 .customerbox__item--domain {
@@ -77,4 +73,8 @@
     transform: translate(0, -50%);
     color: $link-color-hover;
   }
+}
+
+.customerbox__item--cms--pached_false {
+  color: #ff1d92;
 }

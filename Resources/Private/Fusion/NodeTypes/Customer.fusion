@@ -14,6 +14,10 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Interna
 
                 domain = ${q(node).property('domain')}
                 cms = ${q(node).property('cms')}
+                cms-title = ${q(q(node).property('cms')).property('title')}
+                cms-icon = ${q(q(node).property('cms')).property('icon')}
+                cms-releasenotes = ${q(q(node).property('cms')).property('releasenotes')}
+                cms-patched = ${Date.now() < q(q(node).property('cms')).property('patcheduntil') ? 'true' : 'false'}
                 version = ${q(node).property('version')}
                 hoster = ${q(node).property('hoster')}
 

@@ -72,12 +72,14 @@ InlineEditorOptions: &InlineEditorOptions
         inspector:
           group: customer
     cms:
-      type: string
+      type: reference
       ui:
         label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: customer
+          editorOptions:
+            nodeTypes: ['Joekolade.Bureau:Cms']
     version:
       type: string
       ui:

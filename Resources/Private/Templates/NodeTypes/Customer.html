@@ -20,9 +20,10 @@
                     <i class="fal fa-globe"></i>
                     <a href="{domain}" target="_blank">{domain}</a>
                 </div>
-                <div class="customerbox__item customerbox__item--cms">
-                    <i class="fab fa-typo3"></i>
-                    {cms} {version}
+                <div class="customerbox__item customerbox__item--cms customerbox__item--cms--pached_{cms-patched}">
+                    <i class="fab fa-{cms-icon}"></i>
+                    {cms-title}<f:if condition="{version}"> ({version})</f:if>
+                    <f:if condition="{cms-releasenotes}"><f:link.external uri="{cms-releasenotes}" title="{f:translate(id: 'properties.releasenotes', source:'NodeTypes/Cms', package:'Joekolade.Bureau')}" target="_blank"><i class="fal fa-file"></i></f:link.external></f:if>
                 </div>
                 <div class="customerbox__item customerbox__item--hoster">
                     <i class="fal fa-home"></i>
