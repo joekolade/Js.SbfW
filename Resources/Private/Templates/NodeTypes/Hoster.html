@@ -1,0 +1,28 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<body>
+<f:section name="body">
+
+    <h2>{title}</h2>
+
+    <section class="hosterbox">
+        <dl>
+            <f:if condition="{url}">
+            <dt>
+                <f:translate id="properties.url" source="NodeTypes/Hoster" package="Joekolade.Bureau"></f:translate>
+            </dt>
+            <dd>
+                <f:link.external uri="{url}" target="_blank">{url}</f:link.external>
+            </dd>
+            </f:if>
+            <f:if condition="{controlpanel}">
+            <dt>
+                <f:translate id="properties.controlpanel" source="NodeTypes/Hoster" package="Joekolade.Bureau"></f:translate>
+            </dt>
+            <dd>
+                <f:link.external uri="{controlpanel}" target="_blank">{controlpanel}</f:link.external>
+            </dd>
+            </f:if>
+        </dl>
+    </section>
+</f:section>
+</body>

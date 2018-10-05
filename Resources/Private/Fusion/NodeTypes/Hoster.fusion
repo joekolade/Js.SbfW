@@ -1,0 +1,24 @@
+prototype(Joekolade.Bureau:Hoster.Document) < prototype(Neos.NodeTypes:Internal.Document) {
+    body {
+        # cms content
+        content >
+        content = Neos.NodeTypes:Page.Document {
+            head >
+            httpResponseHead >
+            body {
+                content >
+                templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Hoster.html'
+                sectionName = 'body'
+
+                title = ${q(node).property('title')}
+
+                url = ${q(node).property('url')}
+                controlpanel = ${q(node).property('controlpanel')}
+
+            }
+        }
+
+        # no credentials
+        parts.credentials >
+    }
+}

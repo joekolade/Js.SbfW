@@ -125,6 +125,7 @@
       'Joekolade.Bureau:Agency': true
       'Joekolade.Bureau:Person': true
       'Joekolade.Bureau:Cms': true
+      'Joekolade.Bureau:Hoster': true
   ui:
     group: 'bureau'
     icon: 'icon-folder-o'
