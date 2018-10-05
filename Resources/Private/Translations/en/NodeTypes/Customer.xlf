@@ -62,6 +62,9 @@
             <trans-unit id="properties.contact" xml:space="preserve">
                     <source>Contact</source>
             </trans-unit>
+            <trans-unit id="properties.tasks" xml:space="preserve">
+                    <source>Tasks</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

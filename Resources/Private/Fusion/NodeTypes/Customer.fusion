@@ -40,6 +40,10 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Interna
                     nodePath = 'references'
                 }
 
+                tasks = Neos.Neos:ContentCollection {
+                    nodePath = 'tasks'
+                }
+
                 agency = ${q(node).property('agency')}
             }
         }

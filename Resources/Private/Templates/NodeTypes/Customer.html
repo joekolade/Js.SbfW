@@ -85,6 +85,18 @@
     <section class="box">
         <header>
             <h3>
+                <f:translate id="properties.tasks" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate>
+            </h3>
+        </header>
+        <neos:contentElement.wrap node="{node}">
+        <div class="recommendationbox__content">
+            {tasks -> f:format.raw()}
+        </div>
+        </neos:contentElement.wrap>
+    </section>
+    <section class="box">
+        <header>
+            <h3>
                 <f:translate id="properties.comment" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate>
             </h3>
         </header>

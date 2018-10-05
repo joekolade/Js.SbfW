@@ -5,6 +5,9 @@
             <trans-unit id="ui.label" xml:space="preserve">
                     <source>Task</source>
             </trans-unit>
+            <trans-unit id="ui.inspector.groups.customer" xml:space="preserve">
+                    <source>Task data</source>
+            </trans-unit>
             <trans-unit id="properties.title" xml:space="preserve">
                     <source>Task name</source>
             </trans-unit>

@@ -2,14 +2,14 @@
   superTypes:
     'Neos.NodeTypes:Text': true
   ui:
-    group: 'general'
-    icon: 'fort-check-square'
+    group: bureau
+    icon: check-square-o
     label: i18n
     inspector:
       groups:
         reference:
-          label: 'Referenz Eigenschaften'
-          icon: 'fort-awesome'
+          label: i18n
+          icon: check-square-o
           position: 10
         image:
           position: 15

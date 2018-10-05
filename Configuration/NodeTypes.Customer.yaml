@@ -38,13 +38,19 @@ InlineEditorOptions: &InlineEditorOptions
   superTypes:
     'Joekolade.Bureau:Proto': true
   childNodes:
-    'main':
+    main:
       type: 'Neos.Neos:ContentCollection'
-    'references':
+    references:
       type: 'Neos.Neos:ContentCollection'
       constraints:
         nodeTypes:
           'Joekolade.Bureau:Reference': TRUE
+          '*': false
+    tasks:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'Joekolade.Bureau:Task': TRUE
           '*': false
   ui:
     label: i18n
