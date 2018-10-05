@@ -1,0 +1,9 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<f:if condition="{hoster}">
+    <div class="customerbox__item customerbox__item--hoster">
+        <i class="fal fa-home"></i>
+        {hoster-title}
+        <f:if condition="{hoster-url}"> // <f:link.external uri="{hoster-url}" title="{f:translate(id: 'properties.url', source:'NodeTypes/Hoster', package:'Joekolade.Bureau')}" target="_blank"><i class="fal fa-globe"></i></f:link.external></f:if>
+        <f:if condition="{hoster-controlpanel}"> // <f:link.external uri="{hoster-controlpanel}" title="{f:translate(id: 'properties.controlpanel', source:'NodeTypes/Hoster', package:'Joekolade.Bureau')}" target="_blank"><i class="fal fa-cogs"></i></f:link.external></f:if>
+    </div>
+</f:if>

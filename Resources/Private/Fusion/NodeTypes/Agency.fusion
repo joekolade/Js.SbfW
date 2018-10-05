@@ -11,12 +11,21 @@ prototype(Joekolade.Bureau:Agency.Document) < prototype(Neos.NodeTypes:Internal.
                 itemName = 'customer'
                 itemRenderer = Neos.Fusion:Template {
                     templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/Customer.html'
-                    customer = ${customer}
+
                     title = ${q(customer).property('title')}
-                    domain = ${q(customer).property('domain')}
-                    cms = ${q(customer).property('cms')}
-                    version = ${q(customer).property('version')}
                     #identifier = ${q(customer).property('_identifier')}
+
+                    customerurl = Joekolade.Bureau:Customerurl {
+                        customer = ${customer}
+                    }
+
+                    customercms = Joekolade.Bureau:Customercms {
+                        customer = ${customer}
+                    }
+
+                    customerhoster = Joekolade.Bureau:Customerhoster {
+                        customer = ${customer}
+                    }
                 }
             }
         }

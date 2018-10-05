@@ -1,0 +1,19 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<f:if condition="{domain}">
+    <div class="customerbox__item customerbox__item--domain">
+        <i class="fal fa-globe"></i>
+        <f:if condition="{cms-adminurl}">
+            <f:then>
+                <f:link.external uri="{domain}" target="_blank" title="{f:translate(id: 'title.gotofrontend', package:'Joekolade.Bureau')}">
+                    {domain}
+                </f:link.external>
+                [<f:link.external uri="{domain}/{cms-adminurl}" target="_blank" title="{f:translate(id: 'title.gotobackend', package:'Joekolade.Bureau')}"><i class="fal fa-cogs"></i></f:link.external>]
+            </f:then>
+            <f:else>
+                <f:link.external uri="{domain}" target="_blank" title="{f:translate(id: 'title.gotofrontend', package:'Joekolade.Bureau')}">
+                    {domain}
+                </f:link.external>
+            </f:else>
+        </f:if>
+    </div>
+</f:if>

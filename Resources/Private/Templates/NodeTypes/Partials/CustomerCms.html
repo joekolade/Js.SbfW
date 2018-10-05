@@ -1,0 +1,8 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<f:if condition="{cms}">
+<div class="customerbox__item customerbox__item--cms customerbox__item--cms--pached_{cms-patched}">
+    <i class="fab fa-{cms-icon}"></i>
+    {cms-title}<f:if condition="{version}"> ({version})</f:if>
+    <f:if condition="{cms-releasenotes}"><f:link.external uri="{cms-releasenotes}" title="{f:translate(id: 'properties.releasenotes', source:'NodeTypes/Cms', package:'Joekolade.Bureau')}" target="_blank"><i class="fal fa-file"></i></f:link.external></f:if>
+</div>
+</f:if>

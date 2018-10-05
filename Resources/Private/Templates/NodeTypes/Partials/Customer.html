@@ -5,14 +5,9 @@
             <h3>{title}</h3>
         </neos:link.node>
     </header>
-    <div class="customerbox__item customerbox__item--cms">
-        <i class="fab fa-typo3"></i>
-        {cms} {version}
-    </div>
-    <div class="customerbox__item customerbox__item--domain">
-        <i class="fal fa-globe"></i>
-        <a href="{domain}" target="_blank">{domain}</a>
-    </div>
+    {customerurl -> f:format.raw()}
+    {customercms -> f:format.raw()}
+    {customerhoster -> f:format.raw()}
     <div class="customerbox__item customerbox__item--arrow">
         <i class="fal fa-arrow-right"></i>
     </div>

@@ -12,19 +12,17 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Interna
 
                 title = ${q(node).property('title')}
 
-                domain = ${q(node).property('domain')}
-                cms = ${q(node).property('cms')}
-                cms-title = ${q(q(node).property('cms')).property('title')}
-                cms-icon = ${q(q(node).property('cms')).property('icon')}
-                cms-releasenotes = ${q(q(node).property('cms')).property('releasenotes')}
-                cms-patched = ${Date.now() < q(q(node).property('cms')).property('patcheduntil') ? 'true' : 'false'}
-                cms-adminurl = ${q(q(node).property('cms')).property('adminurl')}
-                version = ${q(node).property('version')}
+                customerurl = Joekolade.Bureau:Customerurl {
+                    customer = ${q(node)}
+                }
 
-                hoster = ${q(node).property('hoster')}
-                hoster-title = ${q(q(node).property('hoster')).property('title')}
-                hoster-url = ${q(q(node).property('hoster')).property('url')}
-                hoster-controlpanel = ${q(q(node).property('hoster')).property('controlpanel')}
+                customercms = Joekolade.Bureau:Customercms {
+                    customer = ${q(node)}
+                }
+
+                customerhoster = Joekolade.Bureau:Customerhoster {
+                    customer = ${q(node)}
+                }
 
                 gdpr = ${q(node).property('gdpr')}
 
@@ -48,6 +46,33 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Interna
             }
         }
     }
+}
+
+prototype(Joekolade.Bureau:Customerurl) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/CustomerUrl.html'
+
+    domain = ${q(this.customer).property('domain')}
+    cms-adminurl = ${q(q(this.customer).property('cms')).property('adminurl')}
+}
+
+prototype(Joekolade.Bureau:Customercms) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/CustomerCms.html'
+
+    cms = ${q(this.customer).property('cms')}
+    cms-title = ${q(q(this.customer).property('cms')).property('title')}
+    cms-icon = ${q(q(this.customer).property('cms')).property('icon')}
+    cms-releasenotes = ${q(q(this.customer).property('cms')).property('releasenotes')}
+    cms-patched = ${Date.now() < q(q(this.customer).property('cms')).property('patcheduntil') ? 'true' : 'false'}
+    version = ${q(this.customer).property('version')}
+}
+
+prototype(Joekolade.Bureau:Customerhoster) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Partials/CustomerHoster.html'
+
+    hoster = ${q(this.customer).property('hoster')}
+    hoster-title = ${q(q(this.customer).property('hoster')).property('title')}
+    hoster-url = ${q(q(this.customer).property('hoster')).property('url')}
+    hoster-controlpanel = ${q(q(this.customer).property('hoster')).property('controlpanel')}
 }
 
 // Deprecated!
