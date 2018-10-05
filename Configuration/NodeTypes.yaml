@@ -14,11 +14,11 @@
   ui:
     group: 'general'
     icon: 'fort-awesome'
-    label: 'Referenz'
+    label: i18n
     inspector:
       groups:
         reference:
-          label: 'Referenz Eigenschaften'
+          label: i18n
           icon: 'fort-awesome'
           position: 10
         image:
@@ -28,15 +28,15 @@
       type: string
       defaultValue: 'Titel der Referenz'
       ui:
-        label: 'Referenz-Titel'
+        label: i18n
         reloadIfChanged: true
         inspector:
-          group: 'reference'
+          group: reference
     referenceurl:
       type: string
       defaultValue: 'http://www.schaefer-webentwicklung.de'
       ui:
-        label: 'Referenz-URL'
+        label: i18n
         reloadIfChanged: true
         inspector:
           group: 'reference'
@@ -44,7 +44,7 @@
       type: boolean
       defaultValue: TRUE
       ui:
-        label: 'Zeige in Referenzliste?'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'reference'
@@ -53,7 +53,7 @@
   superTypes:
     'Neos.Neos:Content': TRUE
   ui:
-    label: 'Referenzen Liste'
+    label: i18n
     group: 'general'
     icon: 'fort-awesome'
   properties:

@@ -24,6 +24,7 @@ TODO:
             - Title
             - main
             - status (int|options)
+            - add to recommendation
 
     Version 2.0.0
     ---

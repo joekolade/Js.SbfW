@@ -1,0 +1,15 @@
+'Joekolade.Bureau:Task':
+  superTypes:
+    'Neos.NodeTypes:Text': true
+  ui:
+    group: 'general'
+    icon: 'fort-check-square'
+    label: i18n
+    inspector:
+      groups:
+        reference:
+          label: 'Referenz Eigenschaften'
+          icon: 'fort-awesome'
+          position: 10
+        image:
+          position: 15
