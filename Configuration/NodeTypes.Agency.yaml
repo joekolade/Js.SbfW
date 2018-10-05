@@ -1,6 +1,10 @@
 'Joekolade.Bureau:Agency':
   superTypes:
     'Neos.Neos:Document': true
+  constraints:
+    nodeTypes:
+      'Joekolade.Bureau:Customer': true
+      'Joekolade.Bureau:Person': true
   ui:
     label: i18n
     group: 'bureau'
