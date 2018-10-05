@@ -1,0 +1,25 @@
+prototype(Joekolade.Bureau:Cms.Document) < prototype(Neos.NodeTypes:Internal.Document) {
+    body {
+        # cms content
+        content >
+        content = Neos.NodeTypes:Page.Document {
+            head >
+            httpResponseHead >
+            body {
+                content >
+                templatePath = 'resource://Joekolade.Bureau/Private/Templates/NodeTypes/Cms.html'
+                sectionName = 'body'
+
+                title = ${q(node).property('title')}
+
+                icon = ${q(node).property('icon')}
+                releasedate = ${q(node).property('releasedate')}
+                releasenotes = ${q(node).property('releasenotes')}
+
+            }
+        }
+
+        # no credentials
+        parts.credentials >
+    }
+}

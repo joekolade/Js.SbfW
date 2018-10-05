@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Joekolade.Bureau" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                    <source>CMS</source>
+            </trans-unit>
+            <trans-unit id="ui.inspector.tabs.cms" xml:space="preserve">
+                    <source>CMS</source>
+            </trans-unit>
+            <trans-unit id="ui.inspector.groups.customer" xml:space="preserve">
+                    <source>CMS data</source>
+            </trans-unit>
+            <trans-unit id="properties.icon" xml:space="preserve">
+                    <source>release icon</source>
+            </trans-unit>
+            <trans-unit id="properties.releasedate" xml:space="preserve">
+                    <source>release date</source>
+            </trans-unit>
+            <trans-unit id="properties.releasenotes" xml:space="preserve">
+                    <source>release notes</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

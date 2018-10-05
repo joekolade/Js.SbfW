@@ -20,8 +20,6 @@ prototype(Joekolade.Bureau:InternalPartial) < prototype(Neos.Fusion:Template) {
 prototype(Neos.NodeTypes:Page.Document) >
 prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 
-    #headerComment.@process.1 = ${'JbfW ' + value}
-
     head {
         stylesheets.site = Neos.Fusion:Template {
             templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
@@ -49,6 +47,8 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
             credentials = Joekolade.Bureau:InternalPartial {
                 sectionName = 'credentials'
                 // TODO: credentials
+                agency = ${q(node).parents().filter('[instanceof Joekolade.Bureau:Agency]').get(0)}
+                title = ${q(node).parents().filter('[instanceof Joekolade.Bureau:Agency]').first().property('title')}
             }
         }
 

@@ -124,6 +124,7 @@
     nodeTypes:
       'Joekolade.Bureau:Agency': true
       'Joekolade.Bureau:Person': true
+      'Joekolade.Bureau:Cms': true
   ui:
     group: 'bureau'
     icon: 'icon-folder-o'

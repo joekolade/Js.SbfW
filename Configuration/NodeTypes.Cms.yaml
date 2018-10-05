@@ -1,0 +1,42 @@
+'Joekolade.Bureau:Cms':
+  superTypes:
+    'Joekolade.Bureau:Proto': true
+  ui:
+    label: i18n
+    group: 'bureau'
+    icon: 'icon-cogs'
+    inlineEditable: TRUE
+    inspector:
+      tabs:
+        'cms':
+          label: i18n
+          position: 1
+          icon: 'icon-cogs'
+      groups:
+        'cms':
+          label: i18n
+          icon: 'icon-cogs'
+          position: before general
+          tab: cms
+    properties:
+      icon:
+        type: string
+        ui:
+          label: i18n
+          reloadIfChanged: TRUE
+          inspector:
+            group: cms
+      releasedate:
+        type: string
+        ui:
+          label: i18n
+          reloadIfChanged: TRUE
+          inspector:
+            group: cms
+      releaasenotes:
+        type: string
+        ui:
+          label: i18n
+          reloadIfChanged: TRUE
+          inspector:
+            group: cms

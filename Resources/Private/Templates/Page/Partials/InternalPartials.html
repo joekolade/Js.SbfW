@@ -42,8 +42,11 @@
 
 <f:section name="credentials">
     <section class="agencydata">
-        <b class="agencydata__name">Werbeagentur Fetscher</b>
-        <a href="#" class="agencydata__function"><i class="fal fa-id-card"></i></a>
+            <b class="agencydata__name">{title}</b>
+        <neos:link.node node="{agency}" class="agencydata__function">
+            <i class="fal fa-id-card"></i></neos:link.node>
+        <!--
         <a href="#" class="agencydata__function"><i class="fal fa-sign-out"></i></a>
+        -->
     </section>
 </f:section>

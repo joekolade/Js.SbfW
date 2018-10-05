@@ -1,16 +1,58 @@
 TODO:
 
-    - Frontend CSS and Layout
+    Version 1.0.0
+    ---
 
-    - CMS Nodetype
-    - Last edited (Customer)
-    - Hoster Nodetype
+        - Joekolade.Bureau:Cms Nodetype
+            - icon
+            - patcheduntil
+            - releasedate
+            - releasenotes
+            - admin url postfix
+            - kann Customer zugewiesen werden
+                - Field
+                - Template
+                -> Link BE
 
-    - Projects (per Customer) => möglichkeit angebot an zu fordern
+        - Joekolade.Bureau:Hoster Nodetype
+            - title
+            - let's encrypt
+            - website
+            - adminurl
+            - kann Customer zugewiesen werden
+                - Field
+                - Template
+                -> Link BE
+                + paket falls bekannt
 
-    - SVG loader (Schäferstab)
+        - Joekolade.Bureau:Task option/handlungsempfehlung
+            - Title
+            - main
+            - status (int|options)
 
-    - option/handlungsempfehlung
+    Version 2.0.0
+    ---
+
+        - FELogin
+            - Login funktion
+            - Sichtbarkeit Inhalte (Büro/Agentur/Kunde)
+                - Dimensions:
+                    - Customer (default)
+                    - Agency (additional Contents)
+        - Last edited (Customer)
+            - feld
+            - Template
+        - Projects (ContentNodeType per Customer) => möglichkeit angebot an zu fordern
+        - SVG loader (Schäferstab)
+
+    Version X
+    ---
+        CMSVersion
+            - Als Subnode zu CMS
+
+
+Notes:
+===
 
 FELOGIN:
 
@@ -20,11 +62,3 @@ FELOGIN:
 User - Model (Agency - am besten im Node pflegbar)
 User - Model (Customer - am besten im Node pflegbar)
 
-Nodes:
-    Persons immer verborgen
-    Agency: Agency zuweisen
-    Customer: Agency (ist schon zugewiesen), Customer zuweisen
-
-Dimensions:
-    Customer (default)
-    Agency (additional Contents)
