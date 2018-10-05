@@ -88,12 +88,14 @@ InlineEditorOptions: &InlineEditorOptions
         inspector:
           group: customer
     hoster:
-      type: string
+      type: reference
       ui:
         label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: customer
+          editorOptions:
+            nodeTypes: ['Joekolade.Bureau:Hoster']
     gdpr:
       type: boolean
       ui:

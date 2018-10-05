@@ -39,7 +39,9 @@
                 </div>
                 <div class="customerbox__item customerbox__item--hoster">
                     <i class="fal fa-home"></i>
-                    {hoster}
+                    {hoster-title}
+                    <f:if condition="{hoster-url}"> // <f:link.external uri="{hoster-url}" title="{f:translate(id: 'properties.url', source:'NodeTypes/Hoster', package:'Joekolade.Bureau')}" target="_blank"><i class="fal fa-globe"></i></f:link.external></f:if>
+                    <f:if condition="{hoster-controlpanel}"> // <f:link.external uri="{hoster-controlpanel}" title="{f:translate(id: 'properties.controlpanel', source:'NodeTypes/Hoster', package:'Joekolade.Bureau')}" target="_blank"><i class="fal fa-cogs"></i></f:link.external></f:if>
                 </div>
                 <div class="customerbox__item customerbox__item--gdpr">
                     <f:if condition="{gdpr}">
@@ -48,7 +50,7 @@
                             <f:translate id="properties.gdpr.1" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate>
                         </f:then>
                         <f:else>
-                            <i class="fal fa-bug"></i>
+                            <i class="fal fa-ban" style="color:Tomato"></i>
                             <f:translate id="properties.gdpr.0" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate>
                         </f:else>
                     </f:if>

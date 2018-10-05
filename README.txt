@@ -3,7 +3,7 @@ TODO:
     Version 1.0.0
     ---
 
-        - Joekolade.Bureau:Cms Nodetype
+        x Joekolade.Bureau:Cms Nodetype
             x icon
             x patcheduntil
             x releasedate
@@ -16,11 +16,9 @@ TODO:
             x let's encrypt
             x website
             x adminurl
-            - kann Customer zugewiesen werden
-                - Field
-                - Template
-                -> Link BE
-                + paket falls bekannt
+            x kann Customer zugewiesen werden
+                x Field
+                x Template
 
         - Joekolade.Bureau:Task option/handlungsempfehlung
             - Title
@@ -41,6 +39,8 @@ TODO:
             - Template
         - Projects (ContentNodeType per Customer) => möglichkeit angebot an zu fordern
         - SVG loader (Schäferstab)
+        - Joekolade.Bureau:Customer
+            + optional hosting paket (FIELD)
 
     Version X
     ---

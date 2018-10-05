@@ -20,7 +20,11 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Interna
                 cms-patched = ${Date.now() < q(q(node).property('cms')).property('patcheduntil') ? 'true' : 'false'}
                 cms-adminurl = ${q(q(node).property('cms')).property('adminurl')}
                 version = ${q(node).property('version')}
+
                 hoster = ${q(node).property('hoster')}
+                hoster-title = ${q(q(node).property('hoster')).property('title')}
+                hoster-url = ${q(q(node).property('hoster')).property('url')}
+                hoster-controlpanel = ${q(q(node).property('hoster')).property('controlpanel')}
 
                 gdpr = ${q(node).property('gdpr')}
 
