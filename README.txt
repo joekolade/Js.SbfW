@@ -10,6 +10,7 @@ TODO:
 
     - SVG loader (Schäferstab)
 
+    - option/handlungsempfehlung
 
 FELOGIN:
 

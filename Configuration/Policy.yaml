@@ -1,18 +1,18 @@
-privilegeTargets:
-
-  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
-
-    'Joekolade.Bureau:LoginForm':
-      matcher: 'method(Neos\Flow\Security\Authentication\Controller\AbstractAuthenticationController->(?!initialize).*Action()) || method(Joekolade\Bureau\Controller\AuthenticationController->(?!initialize).*Action())'
-
-roles:
-
-  'Neos.Flow:Everybody':
-    privileges:
-    -
-      # Grant any user access to the FrontendLoginLoginForm plugin
-      privilegeTarget: 'Joekolade.Bureau:LoginForm'
-      permission: GRANT
-
-  'Joekolade.Bureau:Agency':
-    privileges: []
+#privilegeTargets:
+#
+#  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+#
+#    'Joekolade.Bureau:LoginForm':
+#      matcher: 'method(Neos\Flow\Security\Authentication\Controller\AbstractAuthenticationController->(?!initialize).*Action()) || method(Joekolade\Bureau\Controller\AuthenticationController->(?!initialize).*Action())'
+#
+#roles:
+#
+#  'Neos.Flow:Everybody':
+#    privileges:
+#    -
+#      # Grant any user access to the FrontendLoginLoginForm plugin
+#      privilegeTarget: 'Joekolade.Bureau:LoginForm'
+#      permission: GRANT
+#
+#  'Joekolade.Bureau:Agency':
+#    privileges: []

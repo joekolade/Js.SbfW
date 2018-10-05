@@ -1,19 +1,19 @@
 Neos:
-  Flow:
-    security:
-      authentication:
-        providers:
-          'Neos.Neos:Backend':
-            requestPatterns:
-              'Flowpack.Neos.FrontendLogin:NeosBackend':
-                pattern: Flowpack\Neos\FrontendLogin\Security\NeosRequestPattern
-          'Flowpack.Neos.FrontendLogin:Frontend':
-            provider: PersistedUsernamePasswordProvider
-            requestPatterns:
-              'Flowpack.Neos.FrontendLogin:NeosFrontend':
-                pattern: Flowpack\Neos\FrontendLogin\Security\NeosRequestPattern
-                patternOptions:
-                  matchFrontend: true
+#  Flow:
+#    security:
+#      authentication:
+#        providers:
+#          'Neos.Neos:Backend':
+#            requestPatterns:
+#              'Joekolade.Bureau:NeosBackend':
+#                pattern: Joekolade\Bureau\Security\NeosRequestPattern
+#          'Joekolade.Bureau:Frontend':
+#            provider: PersistedUsernamePasswordProvider
+#            requestPatterns:
+#              'Joekolade.Bureau:NeosFrontend':
+#                pattern: Joekolade\Bureau\Security\NeosRequestPattern
+#                patternOptions:
+#                  matchFrontend: true
   Neos:
     nodeTypes:
       groups:
