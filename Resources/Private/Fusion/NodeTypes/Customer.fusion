@@ -18,6 +18,7 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Interna
                 cms-icon = ${q(q(node).property('cms')).property('icon')}
                 cms-releasenotes = ${q(q(node).property('cms')).property('releasenotes')}
                 cms-patched = ${Date.now() < q(q(node).property('cms')).property('patcheduntil') ? 'true' : 'false'}
+                cms-adminurl = ${q(q(node).property('cms')).property('adminurl')}
                 version = ${q(node).property('version')}
                 hoster = ${q(node).property('hoster')}
 

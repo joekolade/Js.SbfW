@@ -9,10 +9,7 @@ TODO:
             x releasedate
             x releasenotes
             x admin url postfix
-            - kann Customer zugewiesen werden
-                - Field
-                - Template
-                -> Link BE
+            x kann Customer zugewiesen werden
 
         - Joekolade.Bureau:Hoster Nodetype
             - title

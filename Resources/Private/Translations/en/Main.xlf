@@ -33,6 +33,12 @@
 			<trans-unit id="authentication.failure.message" xml:space="preserve">
 				<source>With the given credentials the login could not be performed successfully.</source>
 			</trans-unit>
+			<trans-unit id="title.gotofrontend" xml:space="preserve">
+				<source>go to frontend</source>
+			</trans-unit>
+			<trans-unit id="title.gotobackend" xml:space="preserve">
+				<source>go to backend</source>
+			</trans-unit>
         </body>
     </file>
 </xliff>
