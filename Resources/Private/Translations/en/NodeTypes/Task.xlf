@@ -11,6 +11,39 @@
             <trans-unit id="properties.title" xml:space="preserve">
                     <source>Task name</source>
             </trans-unit>
+            <trans-unit id="properties.title.ui.inline.editorOptions.placeholder" xml:space="preserve">
+                <source>Title of the task</source>
+            </trans-unit>
+            <trans-unit id="properties.description" xml:space="preserve">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="properties.description.ui.inline.editorOptions.placeholder" xml:space="preserve">
+                <source>Description goes here</source>
+            </trans-unit>
+            <trans-unit id="properties.status" xml:space="preserve">
+                <source>status</source>
+            </trans-unit>
+            <trans-unit id="properties.status.selectBoxEditor.values.0" xml:space="preserve">
+                <source>proposed</source>
+            </trans-unit>
+            <trans-unit id="properties.status.selectBoxEditor.values.1" xml:space="preserve">
+                <source>ordered</source>
+            </trans-unit>
+            <trans-unit id="properties.status.selectBoxEditor.values.2" xml:space="preserve">
+                <source>inreview</source>
+            </trans-unit>
+            <trans-unit id="properties.status.selectBoxEditor.values.3" xml:space="preserve">
+                <source>approved</source>
+            </trans-unit>
+            <trans-unit id="properties.status.selectBoxEditor.values.4" xml:space="preserve">
+                <source>charged</source>
+            </trans-unit>
+            <trans-unit id="properties.status.selectBoxEditor.values.5" xml:space="preserve">
+                <source>done</source>
+            </trans-unit>
+            <trans-unit id="properties.status.selectBoxEditor.values.6" xml:space="preserve">
+                <source>declined</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

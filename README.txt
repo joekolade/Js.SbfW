@@ -20,11 +20,11 @@ TODO:
                 x Field
                 x Template
 
-        - Joekolade.Bureau:Task option/handlungsempfehlung
-            - Title
-            - main
-            - status (int|options)
-            - add to recommendation
+        x Joekolade.Bureau:Task option/handlungsempfehlung
+            x Title
+            x add to customer
+            x description
+            x status (int|options)
 
     Version 2.0.0
     ---

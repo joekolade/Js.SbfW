@@ -1,0 +1,32 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+
+<h3>{neos:contentElement.editable(property: 'title')}</h3>
+<div class="task__description">
+    {neos:contentElement.editable(property: 'description')}
+</div>
+<div class="task__status">
+    <f:switch expression="{status}">
+        <f:case value="0">
+            <i class="fal fa-info" title="{f:translate(id: 'properties.status.selectBoxEditor.values.0', source:'NodeTypes/Task', package:'Joekolade.Bureau')}"></i>
+        </f:case>
+        <f:case value="1">
+            <i class="fal fa-bullseye" title="{f:translate(id: 'properties.status.selectBoxEditor.values.1', source:'NodeTypes/Task', package:'Joekolade.Bureau')}"></i>
+        </f:case>
+        <f:case value="2">
+            <i class="fal fa-search" title="{f:translate(id: 'properties.status.selectBoxEditor.values.2', source:'NodeTypes/Task', package:'Joekolade.Bureau')}"></i>
+        </f:case>
+        <f:case value="3">
+            <i class="fal fa-thumbs-up" title="{f:translate(id: 'properties.status.selectBoxEditor.values.3', source:'NodeTypes/Task', package:'Joekolade.Bureau')}"></i>
+        </f:case>
+        <f:case value="4">
+            <i class="fal fa-hand-holding-usd" title="{f:translate(id: 'properties.status.selectBoxEditor.values.4', source:'NodeTypes/Task', package:'Joekolade.Bureau')}"></i>
+        </f:case>
+        <f:case value="5">
+            <i class="fal fa-check-o" title="{f:translate(id: 'properties.status.selectBoxEditor.values.5', source:'NodeTypes/Task', package:'Joekolade.Bureau')}"></i>
+        </f:case>
+        <f:case value="6">
+            <i class="fal fa-ban" title="{f:translate(id: 'properties.status.selectBoxEditor.values.6', source:'NodeTypes/Task', package:'Joekolade.Bureau')}"></i>
+        </f:case>
+        <f:defaultCase>{status}</f:defaultCase>
+    </f:switch>
+</div>
