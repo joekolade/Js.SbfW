@@ -8,17 +8,29 @@
             <trans-unit id="ui.inspector.tabs.cms" xml:space="preserve">
                     <source>CMS</source>
             </trans-unit>
-            <trans-unit id="ui.inspector.groups.customer" xml:space="preserve">
+            <trans-unit id="ui.inspector.groups.cms" xml:space="preserve">
                     <source>CMS data</source>
             </trans-unit>
             <trans-unit id="properties.icon" xml:space="preserve">
-                    <source>release icon</source>
+                    <source>CMS icon</source>
+            </trans-unit>
+            <trans-unit id="properties.patcheduntil" xml:space="preserve">
+                    <source>security patches until</source>
             </trans-unit>
             <trans-unit id="properties.releasedate" xml:space="preserve">
                     <source>release date</source>
             </trans-unit>
             <trans-unit id="properties.releasenotes" xml:space="preserve">
                     <source>release notes</source>
+            </trans-unit>
+            <trans-unit id="properties.releasenotes" xml:space="preserve">
+                    <source>release notes</source>
+            </trans-unit>
+            <trans-unit id="properties.requirements" xml:space="preserve">
+                    <source>requirements</source>
+            </trans-unit>
+            <trans-unit id="properties.adminurl" xml:space="preserve">
+                    <source>adminster URL postfix</source>
             </trans-unit>
         </body>
     </file>

@@ -4,11 +4,11 @@ TODO:
     ---
 
         - Joekolade.Bureau:Cms Nodetype
-            - icon
-            - patcheduntil
-            - releasedate
-            - releasenotes
-            - admin url postfix
+            x icon
+            x patcheduntil
+            x releasedate
+            x releasenotes
+            x admin url postfix
             - kann Customer zugewiesen werden
                 - Field
                 - Template

@@ -15,6 +15,9 @@ prototype(Joekolade.Bureau:Cms.Document) < prototype(Neos.NodeTypes:Internal.Doc
                 icon = ${q(node).property('icon')}
                 releasedate = ${q(node).property('releasedate')}
                 releasenotes = ${q(node).property('releasenotes')}
+                patcheduntil = ${q(node).property('patcheduntil')}
+                requirements = ${q(node).property('requirements')}
+                adminurl = ${q(node).property('adminurl')}
 
             }
         }

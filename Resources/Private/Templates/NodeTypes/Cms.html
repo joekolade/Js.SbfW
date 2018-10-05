@@ -4,17 +4,53 @@
 
     <h2>{title}</h2>
 
+    <f:if condition="{icon}">
+        <i class="fab fa-{icon}"></i>
+    </f:if>
     <section class="versionbox">
-        <div class="col">
-            <header>
-                <h3>
-                    <f:translate id="customer.hardware.header" package="Joekolade.Bureau"></f:translate>
-                </h3>
-            </header>
-            <section class="versionbox">
-                Version 1.2.3
-            </section>
-        </div>
+        <dl>
+            <f:if condition="{patcheduntil}">
+            <dt>
+                <f:translate id="properties.patcheduntil" source="NodeTypes/Cms" package="Joekolade.Bureau"></f:translate>
+            </dt>
+            <dd>
+                <f:format.date format="d.m.Y">{patcheduntil}</f:format.date>
+            </dd>
+            </f:if>
+            <f:if condition="{releasedate}">
+            <dt>
+                <f:translate id="properties.releasedate" source="NodeTypes/Cms" package="Joekolade.Bureau"></f:translate>
+            </dt>
+            <dd>
+                <f:format.date format="d.m.Y">{releasedate}</f:format.date>
+            </dd>
+            </f:if>
+            <f:if condition="{releasenotes}">
+            <dt>
+                <f:translate id="properties.releasenotes" source="NodeTypes/Cms" package="Joekolade.Bureau"></f:translate>
+            </dt>
+            <dd>
+                <f:link.external target="_blank" uri="{releasenotes}">{releasenotes}</f:link.external>
+            </dd>
+            </f:if>
+            <f:if condition="{adminurl}">
+            <dt>
+                <f:translate id="properties.adminurl" source="NodeTypes/Cms" package="Joekolade.Bureau"></f:translate>
+            </dt>
+            <dd>
+                <f:link.external target="_blank" uri="{adminurl}">{adminurl}</f:link.external>
+            </dd>
+            </f:if>
+        </dl>
+        <f:if condition="{requirements}">
+            <br>
+            <h3>
+                <f:translate id="properties.requirements" source="NodeTypes/Cms" package="Joekolade.Bureau"></f:translate>
+            </h3>
+            <p>
+            {requirements -> f:format.nl2br()}
+            </p>
+        </f:if>
     </section>
 </f:section>
 </body>
