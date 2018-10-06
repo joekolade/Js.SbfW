@@ -35,6 +35,13 @@
                         </f:else>
                     </f:if>
                 </div>
+                <f:if condition="{customeradmin}">
+                    <div class="customerbox__item customerbox__item--customeradmin">
+                        <f:translate id="customer.customeradmin.text" package="Joekolade.Bureau" arguments="{
+                            0: {customeradmin -> f:format.date(format: 'd.m.Y')}
+                        }"></f:translate>
+                    </div>
+                </f:if>
             </section>
         </div>
         <div class="col">

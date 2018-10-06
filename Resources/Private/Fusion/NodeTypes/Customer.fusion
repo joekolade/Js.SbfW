@@ -27,7 +27,10 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Interna
                 gdpr = ${q(node).property('gdpr')}
 
                 recommendation = ${q(node).property('recommendation')}
+
                 comment = ${q(node).property('comment')}
+
+                customeradmin = ${q(node).property('customeradmin')}
 
                 main = Neos.Neos:PrimaryContent {
                     nodePath = 'main'

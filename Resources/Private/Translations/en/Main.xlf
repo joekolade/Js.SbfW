@@ -11,6 +11,9 @@
             <trans-unit id="customer.recommendationLongterm.header" xml:space="preserve">
                     <source>Recommendation (longterm)</source>
             </trans-unit>
+            <trans-unit id="customer.customeradmin.text" xml:space="preserve">
+                    <source>Customer has admin access since %s</source>
+            </trans-unit>
             <trans-unit id="agency.no_customers" xml:space="preserve">
                     <source>No customers so far!</source>
             </trans-unit>

@@ -35,6 +35,9 @@
             <trans-unit id="properties.gdpr.1" xml:space="preserve">
                     <source>gdpr compliant</source>
             </trans-unit>
+            <trans-unit id="properties.customeradmin" xml:space="preserve">
+                    <source>Customer has admin rights?</source>
+            </trans-unit>
             <trans-unit id="properties.description" xml:space="preserve">
                     <source>Description</source>
             </trans-unit>

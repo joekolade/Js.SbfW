@@ -109,6 +109,15 @@ InlineEditorOptions: &InlineEditorOptions
         reloadIfChanged: TRUE
         inspector:
           group: customer
+    customeradmin:
+      type: DateTime
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: customer
+          editorOptions:
+            format: 'd.m.Y'
     agency:
       type: reference
       ui:
