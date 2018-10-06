@@ -27,7 +27,6 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Interna
                 gdpr = ${q(node).property('gdpr')}
 
                 recommendation = ${q(node).property('recommendation')}
-                recommendationLongterm = ${q(node).property('recommendationLongterm')}
                 comment = ${q(node).property('comment')}
 
                 main = Neos.Neos:PrimaryContent {

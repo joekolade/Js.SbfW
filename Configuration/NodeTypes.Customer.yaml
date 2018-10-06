@@ -134,12 +134,6 @@ InlineEditorOptions: &InlineEditorOptions
         reloadIfChanged: TRUE
         inlineEditable: TRUE
         inline: *InlineEditorOptions
-    'recommendationLongterm':
-      type: string
-      ui:
-        label: i18n
-        inlineEditable: TRUE
-        inline: *InlineEditorOptions
     comment:
       type: string
       ui:
