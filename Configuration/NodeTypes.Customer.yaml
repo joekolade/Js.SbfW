@@ -1,4 +1,4 @@
-InlineEditorOptions: &InlineEditorOptionsCustomer
+InlineEditorOptionsCustomer: &InlineEditorOptionsCustomer
   editorOptions:
     placeholder: i18n
     autoparagraph: true

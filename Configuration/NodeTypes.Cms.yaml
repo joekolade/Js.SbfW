@@ -16,7 +16,7 @@
         'cms':
           label: i18n
           icon: 'icon-cogs'
-          position: before general
+          position: 2
           tab: cms
   properties:
     icon:
