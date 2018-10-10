@@ -52,7 +52,7 @@
       defaultValue: '... intro ...'
       ui:
         inlineEditable: TRUE
-        aloha:
+        inline:
           editorOptions:
             placeholder: i18n
             autoparagraph: true
