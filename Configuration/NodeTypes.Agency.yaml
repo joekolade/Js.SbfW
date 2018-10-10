@@ -19,7 +19,7 @@
         agency:
           label: i18n
           icon: 'icon-building'
-          position: before general
+          position: 2
           tab: agency
   properties:
     website:
