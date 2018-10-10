@@ -50,8 +50,11 @@
             <trans-unit id="properties.recommendation.ui.inline.editorOptions.placeholder" xml:space="preserve">
                     <source>Recommendation for that customer (short term)</source>
             </trans-unit>
-            <trans-unit id="properties.recommendation.ui.inline.editorOptions.placeholder" xml:space="preserve">
-                    <source>Recommendation for that customer (short term)</source>
+            <trans-unit id="properties.recommendationLongterm" xml:space="preserve">
+                    <source>Recommendation (long)</source>
+            </trans-unit>
+            <trans-unit id="properties.recommendationLongterm.ui.inline.editorOptions.placeholder" xml:space="preserve">
+                    <source>Recommendation for that customer (long term)</source>
             </trans-unit>
             <trans-unit id="properties.comment" xml:space="preserve">
                     <source>Comment</source>

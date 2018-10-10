@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Joekolade.Bureau" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                    <source>Hoster</source>
+            </trans-unit>
+            <trans-unit id="ui.inspector.tabs.cms" xml:space="preserve">
+                    <source>Hoster</source>
+            </trans-unit>
+            <trans-unit id="ui.inspector.groups.cms" xml:space="preserve">
+                    <source>Hoster data</source>
+            </trans-unit>
+            <trans-unit id="properties.url" xml:space="preserve">
+                    <source>Website</source>
+            </trans-unit>
+            <trans-unit id="properties.controlpanel" xml:space="preserve">
+                    <source>Control panel</source>
+            </trans-unit>
+            <trans-unit id="properties.usesletsencrypt" xml:space="preserve">
+                    <source>Hoster uses usesletsencrypt</source>
+            </trans-unit>
+            <trans-unit id="properties.usesletsencrypt.0" xml:space="preserve">
+                    <source>no let's encrypt available</source>
+            </trans-unit>
+            <trans-unit id="properties.usesletsencrypt.1" xml:space="preserve">
+                    <source>let's encrypt enabled</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

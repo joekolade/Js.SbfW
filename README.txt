@@ -26,6 +26,15 @@ TODO:
             x description
             x status (int|options)
 
+    Version 1.1.0
+    ---
+        - german translation
+        - Joekolade.Bureau:Task
+            - due date
+            - changed/ordered date
+            - verfeinern
+            - Optik
+
     Version 2.0.0
     ---
 

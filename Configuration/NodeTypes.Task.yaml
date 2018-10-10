@@ -47,20 +47,30 @@ InlineEditorOptions: &InlineEditorOptions
           label: i18n
           icon: check-square-o
           position: 10
+          tab: general
   properties:
     title:
       type: string
-      label: i18n
       ui:
+        label: i18n
         inline:
           editorOptions:
             placeholder: i18n
     description:
       type: string
-      label: i18n
       ui:
+        label: i18n
         inlineEditable: TRUE
         inline: *InlineEditorOptions
+    duedate:
+      type: DateTime
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: task
+          editorOptions:
+            format: 'd.m.Y'
     status:
       type: string
       defaultValue: 0
