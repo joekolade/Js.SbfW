@@ -1,6 +1,6 @@
 'Joekolade.Bureau:Task':
   superTypes:
-    'Neos.NodeTypes:Content': true
+    'Neos.NodeTypes:Text': true
   ui:
     group: bureau
     icon: check-square-o
