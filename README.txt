@@ -30,8 +30,9 @@ TODO:
     ---
         - german translation
         - Joekolade.Bureau:Task
-            - due date
-            - changed/ordered date
+            - "due date"
+            - "changed/ordered date"
+            - "effort"
             - verfeinern
             - Optik
 
@@ -54,8 +55,11 @@ TODO:
 
     Version X
     ---
-        CMSVersion
+        - Joekolade.BureauCMSVersion
             - Als Subnode zu CMS
+        - Joekolade.Bureau:Task
+            - requirements (andere Tasks + decision chains)
+
 
 
 Notes:
