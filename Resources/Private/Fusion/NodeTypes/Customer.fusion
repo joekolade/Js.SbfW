@@ -30,7 +30,7 @@ prototype(Joekolade.Bureau:Customer.Document) < prototype(Neos.NodeTypes:Interna
 
                 comment = ${q(node).property('comment')}
 
-                #customeradmin = ${q(node).property('customeradmin')}
+                customeradmin = ${q(node).property('customeradmin')}
 
                 main = Neos.Neos:PrimaryContent {
                     nodePath = 'main'
