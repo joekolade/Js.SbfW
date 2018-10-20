@@ -10,8 +10,7 @@
         task:
           label: i18n
           icon: check-square-o
-          position: 10
-          tab: general
+          position: 1
   properties:
     title:
       type: string
