@@ -62,15 +62,6 @@
               ol: false
               ul: true
               a: true
-    duedate:
-      type: DateTime
-      ui:
-        label: i18n
-        reloadIfChanged: TRUE
-        inspector:
-          group: task
-          editorOptions:
-            format: 'd.m.Y'
     status:
       type: string
       defaultValue: 0
@@ -110,3 +101,12 @@
               6:
                 label: i18n
                 icon: 'icon-ban'
+    duedate:
+      type: DateTime
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: task
+          editorOptions:
+            format: 'd.m.Y'
