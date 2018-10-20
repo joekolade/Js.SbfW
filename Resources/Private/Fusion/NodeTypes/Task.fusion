@@ -1,0 +1,3 @@
+prototype(Joekolade.Bureau:Task) < prototype(Neos.NodeTypes:Text) {
+    duedate = 'Due date here'
+}
