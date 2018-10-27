@@ -1,13 +1,12 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 <div{attributes -> f:format.raw()}>
-<hr>
+	<h2>
+		{referencetitle}
+	</h2>
 	<div class="imageWrap">
 		<f:render partial="Image" arguments="{_all}" />
 	</div>
 	<div class="contentWrap">
-		<h2>
-			{referencetitle}
-		</h2>
 		<p>
 			<a href="{referenceurl -> f:format.raw()}" target="_blank">{referenceurl -> f:format.raw()}</a>
 		</p>
