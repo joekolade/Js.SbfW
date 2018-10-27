@@ -1,17 +1,20 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 <div{attributes -> f:format.raw()}>
-	<h2>
+	<h2 class="reference__title">
 		{referencetitle}
 	</h2>
-	<div class="imageWrap">
+	<div class="reference__image">
 		<f:render partial="Image" arguments="{_all}" />
 	</div>
-	<div class="contentWrap">
-		<p>
-			<a href="{referenceurl -> f:format.raw()}" target="_blank">{referenceurl -> f:format.raw()}</a>
-		</p>
-		<div class="context">
-			{neos:contentElement.editable(property: 'text')}
-		</div>
+	<div class="reference__content">
+		{neos:contentElement.editable(property: 'text')}
+	</div>
+	<div class="reference__metabar">
+        <div class="reference__meta--cms">
+            <i class="fal fa-{cms-icon}"></i>
+        </div>
+        <div class="reference__meta--link">
+            <a href="{referenceurl -> f:format.raw()}" target="_blank">{referenceurl -> f:format.raw()}</a>
+        </div>
 	</div>
 </div>
