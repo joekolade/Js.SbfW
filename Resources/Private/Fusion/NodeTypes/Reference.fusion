@@ -2,7 +2,5 @@ prototype(Joekolade.Bureau:Reference) < prototype(Neos.NodeTypes:TextWithImage) 
     imageClassName = 'img-responsive'
     maximumWidth = 365
 
-    customercms = Joekolade.Bureau:Customercms {
-        customer = ${q(node)}
-    }
+    cms-icon = ${q(q(node).parent().property('cms')).property('icon')}
 }
