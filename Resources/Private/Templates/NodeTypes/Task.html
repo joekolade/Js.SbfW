@@ -5,8 +5,9 @@
     {neos:contentElement.editable(property: 'description')}
 </div>
 <div class="task__status">
-    {duedate}
+
     <f:format.date format="Y.m.d">{duedate}</f:format.date>
+
     <f:switch expression="{status}">
         <f:case value="0">
             <i class="fal fa-info" title="{f:translate(id: 'properties.status.selectBoxEditor.values.0', source:'NodeTypes/Task', package:'Joekolade.Bureau')}"></i>
