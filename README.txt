@@ -2,7 +2,7 @@ TODO:
 
     Version 1.1.0
     ---
-        - german translation
+        x german translation
         - References
             - wieder einführen
             - optimieren

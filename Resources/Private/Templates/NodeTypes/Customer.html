@@ -91,6 +91,18 @@
         </div>
         </neos:contentElement.wrap>
     </section>
+    <section class="box">
+        <header>
+            <h3>
+                <f:translate id="properties.references" source="NodeTypes/Customer" package="Joekolade.Bureau"></f:translate>
+            </h3>
+        </header>
+        <neos:contentElement.wrap node="{node}">
+        <div class="recommendationbox__content">
+            {references -> f:format.raw()}
+        </div>
+        </neos:contentElement.wrap>
+    </section>
 
 </f:section>
 </body>
