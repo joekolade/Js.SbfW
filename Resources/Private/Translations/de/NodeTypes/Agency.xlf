@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file original="" product-name="Joekolade.Bureau" source-language="en" datatype="plaintext">
+    <file original="" product-name="Joekolade.Bureau" source-language="en" target-language="de" datatype="plaintext">
         <body>
             <trans-unit id="ui.label" xml:space="preserve">
                     <source>Agency</source>
+                    <target>Agentur</target>
             </trans-unit>
             <trans-unit id="ui.inspector.tabs.agency" xml:space="preserve">
                     <source>Agency</source>
             </trans-unit>
             <trans-unit id="ui.inspector.groups.agency" xml:space="preserve">
                     <source>Agency data</source>
+                    <target>Agentur-Daten</target>
             </trans-unit>
             <trans-unit id="properties.website" xml:space="preserve">
                     <source>Website</source>
+                    <target>Webseite</target>
             </trans-unit>
             <trans-unit id="properties.contact" xml:space="preserve">
                     <source>Contact</source>
+                    <target>Kontakt</target>
             </trans-unit>
             <trans-unit id="properties.customers" xml:space="preserve">
                     <source>Customers</source>
+                    <target>Kunden</target>
             </trans-unit>
         </body>
     </file>

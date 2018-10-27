@@ -1,18 +1,22 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file original="" source-language="en" datatype="plaintext">
+    <file original="" source-language="en" target-language="de" datatype="plaintext">
         <body>
             <trans-unit id="ui.label" xml:space="preserve">
                     <source>Customer</source>
+                    <target>Kunde</target>
             </trans-unit>
             <trans-unit id="ui.inspector.tabs.customer" xml:space="preserve">
                     <source>Customer</source>
+                    <target>Kunde</target>
             </trans-unit>
             <trans-unit id="ui.inspector.groups.customer" xml:space="preserve">
                     <source>Customer data</source>
+                    <target>Kunden-Daten</target>
             </trans-unit>
             <trans-unit id="properties.agency" xml:space="preserve">
                     <source>Agency</source>
+                    <target>Agentur</target>
             </trans-unit>
             <trans-unit id="properties.domain" xml:space="preserve">
                     <source>Domain</source>
@@ -28,45 +32,51 @@
             </trans-unit>
             <trans-unit id="properties.gdpr" xml:space="preserve">
                     <source>GDPR</source>
+                    <target>DSGVO</target>
             </trans-unit>
             <trans-unit id="properties.gdpr.0" xml:space="preserve">
                     <source>NOT gdpr compliant</source>
+                    <target>DSGVO NICHT erfüllt</target>
             </trans-unit>
             <trans-unit id="properties.gdpr.1" xml:space="preserve">
                     <source>gdpr compliant</source>
+                    <target>DSGVO erfüllt</target>
             </trans-unit>
             <trans-unit id="properties.customeradmin" xml:space="preserve">
                     <source>Customer has admin rights?</source>
+                    <target>Kunde hat Admin-Zugang</target>
             </trans-unit>
             <trans-unit id="properties.description" xml:space="preserve">
                     <source>Description</source>
+                    <target>Beschreibung</target>
             </trans-unit>
             <trans-unit id="properties.references" xml:space="preserve">
-                    <source>Referenzen</source>
+                    <source>References</source>
+                <target>Referenzen</target>
             </trans-unit>
             <trans-unit id="properties.recommendation" xml:space="preserve">
                     <source>Recommendation</source>
+                    <target>Handlungsempfehlung</target>
             </trans-unit>
             <trans-unit id="properties.recommendation.ui.inline.editorOptions.placeholder" xml:space="preserve">
                     <source>Recommendation for that customer (short term)</source>
-            </trans-unit>
-            <trans-unit id="properties.recommendationLongterm" xml:space="preserve">
-                    <source>Recommendation (long)</source>
-            </trans-unit>
-            <trans-unit id="properties.recommendationLongterm.ui.inline.editorOptions.placeholder" xml:space="preserve">
-                    <source>Recommendation for that customer (long term)</source>
+                    <target>Handlungsempfehlung für diesen Kunde</target>
             </trans-unit>
             <trans-unit id="properties.comment" xml:space="preserve">
                     <source>Comment</source>
+                <target>Kommentar</target>
             </trans-unit>
             <trans-unit id="properties.comment.ui.inline.editorOptions.placeholder" xml:space="preserve">
                     <source>Comment for the customer</source>
+                <target>Kommentar für diesen Kunden</target>
             </trans-unit>
             <trans-unit id="properties.contact" xml:space="preserve">
                     <source>Contact</source>
+                <target>Kontakt</target>
             </trans-unit>
             <trans-unit id="properties.tasks" xml:space="preserve">
                     <source>Tasks</source>
+                <target>Aufgaben</target>
             </trans-unit>
         </body>
     </file>

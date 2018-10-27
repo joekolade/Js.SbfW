@@ -1,54 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file original="" product-name="Joekolade.Bureau" source-language="en" datatype="plaintext">
+    <file original="" product-name="Joekolade.Bureau" source-language="en" target-language="de" datatype="plaintext">
         <body>
             <trans-unit id="ui.label" xml:space="preserve">
                     <source>Task</source>
+                    <target>Aufgabe</target>
             </trans-unit>
             <trans-unit id="ui.inspector.tabs.cms" xml:space="preserve">
                     <source>Task data</source>
+                    <target>Aufgaben-Daten</target>
             </trans-unit>
             <trans-unit id="ui.inspector.groups.cms" xml:space="preserve">
                     <source>Task data</source>
+                    <target>Aufgaben-Daten</target>
             </trans-unit>
             <trans-unit id="properties.title" xml:space="preserve">
                     <source>Task name</source>
+                    <target>Titel</target>
             </trans-unit>
             <trans-unit id="properties.title.ui.inline.editorOptions.placeholder" xml:space="preserve">
                 <source>Title of the task</source>
+                    <target>Titel der Aufgabe</target>
             </trans-unit>
             <trans-unit id="properties.description" xml:space="preserve">
                 <source>Description</source>
+                    <target>Beschreibung</target>
             </trans-unit>
             <trans-unit id="properties.description.ui.inline.editorOptions.placeholder" xml:space="preserve">
                 <source>Description goes here</source>
+                    <target>Beschreibung der Aufgabe</target>
             </trans-unit>
             <trans-unit id="properties.status" xml:space="preserve">
                 <source>status</source>
+                    <target>Status</target>
             </trans-unit>
             <trans-unit id="properties.status.selectBoxEditor.values.0" xml:space="preserve">
                 <source>proposed</source>
+                    <target>vorgeschlagen</target>
             </trans-unit>
             <trans-unit id="properties.status.selectBoxEditor.values.1" xml:space="preserve">
                 <source>ordered</source>
+                    <target>beauftragt</target>
             </trans-unit>
             <trans-unit id="properties.status.selectBoxEditor.values.2" xml:space="preserve">
                 <source>inreview</source>
+                    <target>wartet auf Freigabe</target>
             </trans-unit>
             <trans-unit id="properties.status.selectBoxEditor.values.3" xml:space="preserve">
                 <source>approved</source>
+                    <target>freigegeben</target>
             </trans-unit>
             <trans-unit id="properties.status.selectBoxEditor.values.4" xml:space="preserve">
                 <source>charged</source>
+                    <target>abgerechnet</target>
             </trans-unit>
             <trans-unit id="properties.status.selectBoxEditor.values.5" xml:space="preserve">
                 <source>done</source>
+                    <target>fertiggestellt</target>
             </trans-unit>
             <trans-unit id="properties.status.selectBoxEditor.values.6" xml:space="preserve">
                 <source>declined</source>
+                    <target>abgelehnt</target>
             </trans-unit>
             <trans-unit id="properties.duedate" xml:space="preserve">
                 <source>due date</source>
+                    <target>Fertigstellungsdatum</target>
             </trans-unit>
         </body>
     </file>

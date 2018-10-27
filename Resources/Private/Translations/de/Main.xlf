@@ -1,47 +1,23 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file original="" source-language="en" datatype="plaintext">
+	<file original="" source-language="en" target-language="de" datatype="plaintext">
         <body>
             <trans-unit id="customer.hardware.header" xml:space="preserve">
                     <source>Hardware</source>
+                    <target>Server-Hardware</target>
             </trans-unit>
             <trans-unit id="customer.recommendation.header" xml:space="preserve">
                     <source>Recommendation</source>
-            </trans-unit>
-            <trans-unit id="customer.recommendationLongterm.header" xml:space="preserve">
-                    <source>Recommendation (longterm)</source>
+                    <target>Handlungsempfehlung</target>
             </trans-unit>
             <trans-unit id="customer.customeradmin.text" xml:space="preserve">
                     <source>Customer has admin access since %s</source>
+                    <target>Kunde hat Admin-Zugang zum CMS seit %s</target>
             </trans-unit>
             <trans-unit id="agency.no_customers" xml:space="preserve">
                     <source>No customers so far!</source>
+                    <target>Bisher keine Kunden!</target>
             </trans-unit>
-
-			<trans-unit id="authentication.form.username" xml:space="preserve">
-				<source>Username</source>
-			</trans-unit>
-			<trans-unit id="authentication.form.password" xml:space="preserve">
-				<source>Password</source>
-			</trans-unit>
-			<trans-unit id="authentication.backendmessage" xml:space="preserve">
-				<source>The Frontend User Login Form is disabled in backend mode.</source>
-			</trans-unit>
-			<trans-unit id="authentication.form.submit" xml:space="preserve">
-				<source>Login</source>
-			</trans-unit>
-			<trans-unit id="authentication.failure.title" xml:space="preserve">
-				<source>Login failed!</source>
-			</trans-unit>
-			<trans-unit id="authentication.failure.message" xml:space="preserve">
-				<source>With the given credentials the login could not be performed successfully.</source>
-			</trans-unit>
-			<trans-unit id="title.gotofrontend" xml:space="preserve">
-				<source>go to frontend</source>
-			</trans-unit>
-			<trans-unit id="title.gotobackend" xml:space="preserve">
-				<source>go to backend</source>
-			</trans-unit>
         </body>
     </file>
 </xliff>
