@@ -6,7 +6,7 @@ prototype(Joekolade.Bureau:Referencelist) < prototype(Neos.Neos:Content) {
 
         refs = Neos.Fusion:Collection {
             #collection = ${Array.random(q(site).find('[instanceof Joekolade.Bureau:Reference][showreference]'))}
-            collection = ${q(site).find('[instanceof Joekolade.Bureau:Reference][showreference]')}
+            collection = ${q(site).find('[instanceof Joekolade.Bureau:Reference][showreference]').random()}
             itemName = 'reference'
             itemRenderer = Joekolade.Bureau:Reference {
                 image = ${q(reference).property('image')}
