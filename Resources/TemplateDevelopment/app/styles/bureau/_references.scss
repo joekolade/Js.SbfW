@@ -1,12 +1,11 @@
 
 .joekolade-bureau-referencelist {
-  margin-top: 2em;
+  margin: 2em auto 2em;
   padding-top: 2em;
   border-top: 1px solid #cdcdcd;
 
   @media screen and (min-width: 768px){
     max-width: 80%;
-    margin: 0 auto;
   }
 }
 
