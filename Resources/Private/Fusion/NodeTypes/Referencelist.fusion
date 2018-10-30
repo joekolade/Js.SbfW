@@ -5,13 +5,29 @@ prototype(Joekolade.Bureau:Referencelist) < prototype(Neos.Neos:Content) {
     references = Neos.Fusion:Array {
 
         refs = Neos.Fusion:Collection {
-            collection = ${q(site).find('[instanceof Joekolade.Bureau:Customer]').find('[instanceof Joekolade.Bureau:Reference][showreference]')}
+            collection = ${Array.random(q(site).find('[instanceof Joekolade.Bureau:Reference][showreference]'))}
             itemName = 'reference'
             itemRenderer = Joekolade.Bureau:Reference {
                 image = ${q(reference).property('image')}
                 referencetitle = ${q(reference).property('referencetitle')}
                 text = ${q(reference).property('text')}
                 referenceurl = ${q(reference).property('referenceurl')}
+            }
+
+            @cache {
+                mode = 'cached'
+
+                maximumLifetime = '86400'
+
+                entryIdentifier {
+                    node = ${node}
+                    editPreviewMode = ${node.context.currentRenderingMode.name}
+                }
+
+                entryTags {
+                    1 = ${Neos.Caching.nodeTag(documentNode)}
+                    2 = ${Neos.Caching.nodeTypeTag('[Joekolade.Bureau:Reference]', node)}
+                }
             }
         }
 
