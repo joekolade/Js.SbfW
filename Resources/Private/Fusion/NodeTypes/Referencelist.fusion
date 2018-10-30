@@ -20,11 +20,6 @@ prototype(Joekolade.Bureau:Referencelist) < prototype(Neos.Neos:Content) {
 
                 maximumLifetime = '86400'
 
-                entryIdentifier {
-                    node = ${node}
-                    editPreviewMode = ${node.context.currentRenderingMode.name}
-                }
-
                 entryTags {
                     1 = ${Neos.Caching.nodeTag(documentNode)}
                     2 = ${Neos.Caching.nodeTypeTag('[Joekolade.Bureau:Reference]', node)}
