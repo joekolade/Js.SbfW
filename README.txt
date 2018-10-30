@@ -1,13 +1,5 @@
 TODO:
 
-    Version 1.1.0
-    ---
-        x german translation
-        - References
-            x wieder einführen
-            x optimieren
-        - Launch website (to live)
-
 
     Version 1.2.0
     ---
@@ -54,6 +46,16 @@ TODO:
 
 Release Notes:
 ===
+
+
+Version 1.1.0
+---
+    x german translation
+    x References
+        x wieder einführen
+        x optimieren
+    x Launch website (to live)
+
 
 Version 1.0.0
 ---
