@@ -12,6 +12,7 @@ TODO:
     Version 1.2.0
     ---
         - Online CV
+        - Neue Referenzen (Boxed, card design, ... ?!?)
 
 
     Version 1.3.0
