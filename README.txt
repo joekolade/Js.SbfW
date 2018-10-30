@@ -5,7 +5,7 @@ TODO:
         x german translation
         - References
             x wieder einführen
-            - optimieren
+            x optimieren
         - Launch website (to live)
 
 
