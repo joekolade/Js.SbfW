@@ -7,6 +7,7 @@ prototype(Joekolade.Bureau:Referencelist) < prototype(Neos.Neos:Content) {
         refs = Neos.Fusion:Collection {
             #collection = ${Array.random(q(site).find('[instanceof Joekolade.Bureau:Reference][showreference]'))}
             collection = ${q(site).find('[instanceof Joekolade.Bureau:Reference][showreference]')}
+
             itemName = 'reference'
             itemRenderer = Joekolade.Bureau:Reference {
                 image = ${q(reference).property('image')}
@@ -16,14 +17,11 @@ prototype(Joekolade.Bureau:Referencelist) < prototype(Neos.Neos:Content) {
             }
 
             @cache {
-                mode = 'cached'
-
-                maximumLifetime = '86400'
-
-                entryTags {
-                    1 = ${Neos.Caching.nodeTag(documentNode)}
-                    2 = ${Neos.Caching.nodeTypeTag('[Joekolade.Bureau:Reference]', node)}
-                }
+                mode = 'uncached'
+//                entryTags {
+//                    1 = ${Neos.Caching.nodeTag(node)}
+//                    2 = ${Neos.Caching.nodeTypeTag('[Joekolade.Bureau:Reference]', node)}
+//                }
             }
         }
 
