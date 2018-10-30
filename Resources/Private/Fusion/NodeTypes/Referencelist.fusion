@@ -18,6 +18,10 @@ prototype(Joekolade.Bureau:Referencelist) < prototype(Neos.Neos:Content) {
 
             @cache {
                 mode = 'uncached'
+                context {
+                    1 = 'node'
+                    2 = 'documentNode'
+                }
 //                entryTags {
 //                    1 = ${Neos.Caching.nodeTag(node)}
 //                    2 = ${Neos.Caching.nodeTypeTag('[Joekolade.Bureau:Reference]', node)}
