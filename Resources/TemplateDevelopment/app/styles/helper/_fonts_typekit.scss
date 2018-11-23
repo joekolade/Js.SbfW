@@ -7,6 +7,9 @@
 @function adelle(){
   @return "adelle-sans", sans-serif;
 }
+@function reross(){
+  @return reross-rectangular, sans-serif;
+}
 
 @mixin clarendon(){
   font-weight: 300;
@@ -21,9 +24,17 @@
   font-family: adelle();
 }
 
+@mixin reross() {
+  font-family: reross();
+  font-weight: 400;
+}
+
 .clarendon {
   @include clarendon;
 }
 .adelle {
   @include adelle;
+}
+.reross {
+  @include reross;
 }

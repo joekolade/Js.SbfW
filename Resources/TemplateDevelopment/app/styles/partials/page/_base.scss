@@ -1,0 +1,25 @@
+
+body {
+  background: $body-bg;
+  font-family: $base-font;
+  color: $text-color;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+.wrapper {
+  max-width: $boxed-width;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  section.content {
+    flex: 1;
+  }
+
+  > * {
+    padding: 0 $gutter;
+  }
+}

@@ -1,0 +1,27 @@
+.sbfw__logo {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  svg {
+    width: 65vw;
+    max-width: 120px;
+  }
+
+  margin: 6em 0;
+
+  .claim {
+    text-align: center;
+    color: $color-blues;
+
+    h1 {
+      font-weight: 400;
+      font-size: 4.5em;
+    }
+    h2 {
+      opacity: .8;
+    }
+  }
+}
