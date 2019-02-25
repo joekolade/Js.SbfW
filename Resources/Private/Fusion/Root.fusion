@@ -21,13 +21,13 @@ prototype(Neos.NodeTypes:Page.Document) >
 prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 
     head {
-        stylesheets = Neos.Fusion:Template {
-            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+        stylesheets.site = Neos.Fusion:Template {
+            templatePath = 'resource://Joekolade.Bureau./Private/Templates/Page/Default.html'
             sectionName = 'stylesheets'
         }
 
-        javascripts = Neos.Fusion:Template {
-            templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Default.html'
+        javascripts.site = Neos.Fusion:Template {
+            templatePath = 'resource://Joekolade.Bureau./Private/Templates/Page/Default.html'
             sectionName = 'headScripts'
         }
     }
@@ -69,12 +69,12 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 
 prototype(Neos.NodeTypes:Internal.Document) < prototype(Neos.NodeTypes:Page.Document) {
     head {
-        stylesheets = Neos.Fusion:Template {
+        stylesheets.site = Neos.Fusion:Template {
             templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Internal.html'
             sectionName = 'stylesheets'
         }
 
-        javascripts = Neos.Fusion:Template {
+        javascripts.site = Neos.Fusion:Template {
             templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Internal.html'
             sectionName = 'headScripts'
         }
@@ -90,7 +90,7 @@ prototype(Neos.NodeTypes:Internal.Document) < prototype(Neos.NodeTypes:Page.Docu
         // These are your content areas, you can define as many as you want, just name them and the nodePath.
         content >
 
-        javascripts = Neos.Fusion:Template {
+        javascripts.site = Neos.Fusion:Template {
             templatePath = 'resource://Joekolade.Bureau/Private/Templates/Page/Internal.html'
             sectionName = 'bodyScripts'
         }
